@@ -42,7 +42,7 @@
 
 ### 🚀 Frontend
 <p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,angular,bootstrap,vite" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,bootstrap,vite" />
 </p>
 
 ### 🧠 Backend & APIs
