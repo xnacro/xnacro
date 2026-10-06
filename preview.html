@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile Experience Preview — Prince Tiwari (@xnacro)</title>
+  <style>
+    :root {
+      --gh-bg: #0d1117;
+      --gh-border: #30363d;
+      --gh-text: #c9d1d9;
+      --gh-heading: #f0f6fc;
+      --gh-link: #58a6ff;
+      --gh-btn-bg: #21262d;
+    }
+
+    [data-theme="light"] {
+      --gh-bg: #ffffff;
+      --gh-border: #d0d7de;
+      --gh-text: #24292f;
+      --gh-heading: #1f2328;
+      --gh-link: #0969da;
+      --gh-btn-bg: #f6f8fa;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      background-color: #010409;
+      color: var(--gh-text);
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Top Control Toolbar */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      background: rgba(13, 17, 23, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--gh-border);
+      padding: 10px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .toolbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #f0f6fc;
+    }
+
+    .toolbar-brand .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #247bff;
+      box-shadow: 0 0 10px #247bff;
+    }
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #161b22;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--gh-border);
+    }
+
+    .btn {
+      background: transparent;
+      border: none;
+      color: #8b949e;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover { color: #f0f6fc; background: rgba(255, 255, 255, 0.06); }
+    .btn.active { color: #ffffff; background: #238636; }
+
+    /* Frame container */
+    .viewport-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px 80px;
+    }
+
+    .github-frame {
+      width: 100%;
+      max-width: 980px;
+      background: var(--gh-bg);
+      border: 1px solid var(--gh-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+      transition: max-width 0.3s ease;
+    }
+
+    .github-header {
+      padding: 14px 24px;
+      background: rgba(22, 27, 34, 0.6);
+      border-bottom: 1px solid var(--gh-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    .markdown-body {
+      padding: 32px 24px;
+      background: var(--gh-bg);
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 16px auto;
+      border-radius: 12px;
+    }
+
+    .markdown-body table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .markdown-body th, .markdown-body td {
+      padding: 10px 14px;
+      border: 1px solid var(--gh-border);
+      font-size: 13.5px;
+    }
+
+    .markdown-body th {
+      background: rgba(22, 27, 34, 0.8);
+      color: var(--gh-heading);
+      text-align: left;
+    }
+
+    .markdown-body a {
+      color: var(--gh-link);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .markdown-body a:hover {
+      text-decoration: underline;
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .social-row img {
+      display: inline-block;
+      margin: 0;
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <header class="toolbar">
+    <div class="toolbar-brand">
+      <div class="dot"></div>
+      <span>XNACRO // GITHUB PROFILE PLAYBOOK PREVIEW</span>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn active" id="btn-desktop" onclick="setMode('desktop')">🖥️ Desktop (980px)</button>
+      <button class="btn" id="btn-narrow" onclick="setMode('narrow')">💻 Narrow (768px)</button>
+      <button class="btn" id="btn-mobile" onclick="setMode('mobile')">📱 Mobile (390px)</button>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn" onclick="toggleTheme()">🌓 Toggle Theme</button>
+    </div>
+  </header>
+
+  <main class="viewport-wrapper">
+    <div class="github-frame" id="preview-frame">
+      <div class="github-header">
+        <div style="font-weight: 600; color: #f0f6fc;">
+          <a href="https://github.com/xnacro" style="color: #58a6ff; text-decoration: none;">xnacro</a> / <strong>xnacro</strong> (README.md)
+        </div>
+        <span style="font-size: 11px; padding: 2px 8px; border-radius: 12px; background: rgba(56, 139, 253, 0.15); color: #58a6ff; border: 1px solid rgba(56, 139, 253, 0.4);">
+          Special Repository
+        </span>
+      </div>
+
+      <article class="markdown-body">
+        <div align="center">
+          <img src="./assets/hero.svg?v=1" alt="Intro" />
+          <br/>
+          <img src="./assets/about-life.svg?v=1" alt="About" />
+          <br/>
+          <img src="./assets/stack.svg?v=1" alt="Stack" />
+          <br/>
+          <img src="./assets/id-dashboard.svg?v=1" alt="ID" />
+        </div>
+
+        <br/>
+
+        <h3 style="color: #f0f6fc; margin: 20px 0 10px;">🚀 Things I've Built</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>What it does</th>
+              <th>Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong><a href="https://github.com/xnacro/SurakshaAI" target="_blank">SurakshaAI</a></strong></td>
+              <td>AI-powered geospatial safety analytics platform computing Dynamic Safety Index (DSI)</td>
+              <td>Spatial AI + Microservices</td>
+            </tr>
+            <tr>
+              <td><strong><a href="https://github.com/xnacro/RESQ" target="_blank">RESQ</a></strong></td>
+              <td>Damage-aware relief supply chain routing across 408,986 500m cells</td>
+              <td>PostGIS + Valhalla Routing</td>
+            </tr>
+            <tr>
+              <td><strong><a href="https://github.com/xnacro/GridShare" target="_blank">GridShare</a></strong></td>
+              <td>Peer-to-peer decentralized energy distribution &amp; grid optimization</td>
+              <td>Full-Stack + Distributed Systems</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br/>
+
+        <div align="center">
+          <img src="./assets/connect.svg?v=1" alt="Connect" />
+          
+          <div class="social-row">
+            <a href="https://github.com/xnacro" target="_blank">
+              <img src="https://img.shields.io/badge/GitHub-xnacro-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+            </a>
+            <a href="https://linkedin.com/in/prince-tiwari-727375328" target="_blank">
+              <img src="https://img.shields.io/badge/LinkedIn-Prince_Tiwari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+            </a>
+            <a href="https://instagram.com/am_princetiwari" target="_blank">
+              <img src="https://img.shields.io/badge/Instagram-@am_princetiwari-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+            </a>
+            <a href="mailto:businessofficialtech@gmail.com">
+              <img src="https://img.shields.io/badge/Email-Direct_Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    function setMode(mode) {
+      const frame = document.getElementById('preview-frame');
+      const btnDesktop = document.getElementById('btn-desktop');
+      const btnNarrow = document.getElementById('btn-narrow');
+      const btnMobile = document.getElementById('btn-mobile');
+
+      btnDesktop.classList.remove('active');
+      btnNarrow.classList.remove('active');
+      btnMobile.classList.remove('active');
+
+      if (mode === 'desktop') {
+        frame.style.maxWidth = '980px';
+        btnDesktop.classList.add('active');
+      } else if (mode === 'narrow') {
+        frame.style.maxWidth = '768px';
+        btnNarrow.classList.add('active');
+      } else if (mode === 'mobile') {
+        frame.style.maxWidth = '390px';
+        btnMobile.classList.add('active');
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.body.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.body.setAttribute('data-theme', next);
+    }
+  </script>
+</body>
+</html>

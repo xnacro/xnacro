@@ -1,174 +1,55 @@
 <div align="center">
 
-<!-- ==========================================
-     01 // HERO SECTION & IDENTITY SYSTEM
-========================================== -->
-
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td width="58%" valign="middle" align="left">
-      <a href="https://github.com/xnacro">
-        <img src="./assets/hero/hero-left.svg" width="100%" alt="Prince Tiwari | Systems Architect & Full-Stack AI Engineer" />
-      </a>
-    </td>
-    <td width="42%" valign="middle" align="center">
-      <img src="./assets/mine.png" width="92%" alt="Prince Tiwari" />
-    </td>
-  </tr>
-</table>
+![Intro](./assets/hero.svg?v=1)
 
 <br/>
 
-<img src="./assets/hero/hero-hud.svg" width="100%" alt="System HUD - Status: Active Shipping" />
+![About](./assets/about-life.svg?v=1)
 
 <br/>
 
-<!-- ==========================================
-     02 // CURRENT STATE & SPRINT HUD
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<img src="./assets/system/current-state.svg" width="100%" alt="Current State // Now Building SurakshaAI & Spatial Systems" />
+![Stack](./assets/stack.svg?v=1)
 
 <br/>
 
-<!-- ==========================================
-     03 // FLAGSHIP BUILD — SURAKSHAAI
-========================================== -->
+![ID](./assets/id-dashboard.svg?v=1)
 
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
+</div>
 
-<img src="./assets/flagship/suraksha-card.svg" width="100%" alt="SurakshaAI — AI-Powered Geospatial Safety Intelligence Platform" />
+<br/>
+
+### 🚀 Things I've Built
+
+| Project | What it does | Focus |
+| :--- | :--- | :--- |
+| **[SurakshaAI](https://github.com/xnacro/SurakshaAI)** | AI-powered geospatial safety analytics platform computing Dynamic Safety Index (DSI) | Spatial AI + Microservices |
+| **[RESQ](https://github.com/xnacro/RESQ)** | Damage-aware relief supply chain routing across 408,986 500m cells | PostGIS + Valhalla Routing |
+| **[GridShare](https://github.com/xnacro/GridShare)** | Peer-to-peer decentralized energy distribution &amp; grid optimization | Full-Stack + Distributed Systems |
+
+<br/>
+
+<div align="center">
+
+![Connect](./assets/connect.svg?v=1)
 
 <br/>
 
 <p align="center">
-  <a href="https://github.com/xnacro/SurakshaAI" target="_blank">
-    <img src="./assets/icons/btn-suraksha.svg" width="220" alt="View SurakshaAI Repository" />
+  <a href="https://github.com/xnacro" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-xnacro-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/xnacro/RESQ" target="_blank">
-    <img src="./assets/icons/btn-resq.svg" width="220" alt="View RESQ 408k Repository" />
+  &nbsp;&nbsp;
+  <a href="https://linkedin.com/in/prince-tiwari-727375328" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Prince_Tiwari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-</p>
-
-<br/>
-
-<!-- ==========================================
-     04 // WHAT I BUILD — ENGINEERING DOMAINS
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<img src="./assets/system/what-i-build.svg" width="100%" alt="Core Engineering Domains // Spatial Intelligence, Predictive AI, Full-Stack Architecture" />
-
-<br/>
-
-<!-- ==========================================
-     05 // THE ENGINE — VERIFIED TOOLCHAIN
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<img src="./assets/system/engine-stack.svg" width="100%" alt="The Engine Room // Verified Tech Stack" />
-
-<br/>
-
-<!-- ==========================================
-     06 // BUILDER ID — PASSPORT CREDENTIAL
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<img src="./assets/builder/builder-id.svg" width="100%" alt="Builder ID // 01 Specification Passport" />
-
-<br/>
-
-<!-- ==========================================
-     07 // PROOF OF WORK — EVIDENCE DASHBOARD
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<img src="./assets/system/proof-of-work.svg" width="100%" alt="Proof of Work // 408,986 Grid Cells & National Hackathon Builds" />
-
-<br/>
-
-<!-- ==========================================
-     08 // BUILD LOG — TRAJECTORY & EVOLUTION
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<img src="./assets/system/build-log.svg" width="100%" alt="Build Log // Engineering Trajectory 2024 to Present" />
-
-<br/>
-
-<!-- ==========================================
-     09 // CONNECT — INITIATE TRANSMISSION
-========================================== -->
-
-<p align="center">
-  <img src="./assets/system/divider.svg" width="100%" alt="Divider" />
-</p>
-
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td width="42%" align="center" valign="middle">
-      <img src="./assets/id.png" width="98%" alt="Prince Tiwari pointing to connect" />
-    </td>
-    <td width="58%" valign="middle" align="left">
-      <img src="./assets/connect/connect-card.svg" width="100%" alt="Let's Build Something" />
-      <br/><br/>
-      <table border="0" cellpadding="4" cellspacing="0">
-        <tr>
-          <td>
-            <a href="https://github.com/xnacro" target="_blank">
-              <img src="./assets/icons/btn-github.svg" width="195" alt="GitHub" />
-            </a>
-          </td>
-          <td>
-            <a href="https://linkedin.com/in/prince-tiwari-727375328" target="_blank">
-              <img src="./assets/icons/btn-linkedin.svg" width="195" alt="LinkedIn" />
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://instagram.com/am_princetiwari" target="_blank">
-              <img src="./assets/icons/btn-instagram.svg" width="195" alt="Instagram" />
-            </a>
-          </td>
-          <td>
-            <a href="mailto:businessofficialtech@gmail.com">
-              <img src="./assets/icons/btn-email.svg" width="195" alt="Direct Email" />
-            </a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<br/><br/>
-
-<p align="center">
-  <sub>&copy; 2026 Prince Tiwari (<b>@xnacro</b>) &bull; Built with precision as a unified engineering operating system.</sub>
+  &nbsp;&nbsp;
+  <a href="https://instagram.com/am_princetiwari" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-@am_princetiwari-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:businessofficialtech@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Direct_Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
 </p>
 
 </div>
