@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 46" width="220" height="46">
+  <rect x="1" y="1" width="218" height="44" rx="8" fill="#0D1525" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.6"/>
+  <g transform="translate(16, 13)">
+    <path fill="#2F86FF" d="M19 0h-18c-.55 0-1 .45-1 1v18c0 .55.45 1 1 1h18c.55 0 1-.45 1-1v-18c0-.55-.45-1-1-1zm-11 16h-3v-9h3v9zm-1.5-10.27c-.97 0-1.75-.79-1.75-1.76s.78-1.74 1.75-1.74 1.75.78 1.75 1.74-.78 1.76-1.75 1.76zm10.5 10.27h-3v-4.5c0-1.07-.02-2.45-1.5-2.45-1.5 0-1.73 1.17-1.73 2.37v4.58h-3v-9h2.88v1.23h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6v4.73z"/>
+    <text x="28" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#F5F7FA">LINKEDIN // Prince</text>
+  </g>
+</svg>

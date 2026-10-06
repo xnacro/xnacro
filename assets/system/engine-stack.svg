@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eng-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#2F86FF" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="eng-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16223D" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="480" rx="14" fill="#0D1525" stroke="url(#eng-border)" stroke-width="1.2"/>
+  <rect x="0" y="0" width="880" height="480" rx="14" fill="url(#eng-grid)"/>
+
+  <!-- Top bar -->
+  <g transform="translate(28, 26)">
+    <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#2F86FF">05 // THE ENGINE ROOM &bull; VERIFIED TOOLCHAIN</text>
+    <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">Production Engineering Architecture &amp; Technologies</text>
+  </g>
+
+  <!-- Layer 1: Core Languages -->
+  <g transform="translate(28, 85)">
+    <rect x="0" y="0" width="824" height="52" rx="6" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="31" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">01 // LANGUAGES</text>
+    
+    <g transform="translate(160, 14)">
+      <rect x="0" y="0" width="90" height="24" rx="4" fill="#14243F"/><text x="12" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">JavaScript</text>
+      <rect x="100" y="0" width="90" height="24" rx="4" fill="#14243F"/><text x="110" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">TypeScript</text>
+      <rect x="200" y="0" width="75" height="24" rx="4" fill="#14243F"/><text x="210" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Python</text>
+      <rect x="285" y="0" width="60" height="24" rx="4" fill="#14243F"/><text x="296" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">SQL</text>
+      <rect x="355" y="0" width="95" height="24" rx="4" fill="#14243F"/><text x="365" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">HTML5 / CSS3</text>
+      <rect x="460" y="0" width="55" height="24" rx="4" fill="#14243F"/><text x="470" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">PHP</text>
+    </g>
+  </g>
+
+  <!-- Layer 2: Frontend & Geospatial Viz -->
+  <g transform="translate(28, 147)">
+    <rect x="0" y="0" width="824" height="52" rx="6" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="31" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">02 // FRONTEND</text>
+    
+    <g transform="translate(160, 14)">
+      <rect x="0" y="0" width="70" height="24" rx="4" fill="#14243F"/><text x="12" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">React</text>
+      <rect x="80" y="0" width="75" height="24" rx="4" fill="#14243F"/><text x="90" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Next.js</text>
+      <rect x="165" y="0" width="60" height="24" rx="4" fill="#14243F"/><text x="175" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Vite</text>
+      <rect x="235" y="0" width="105" height="24" rx="4" fill="#15322F"/><text x="245" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#22C55E">MapLibre GL</text>
+      <rect x="350" y="0" width="95" height="24" rx="4" fill="#15322F"/><text x="360" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#22C55E">Mapbox API</text>
+      <rect x="455" y="0" width="85" height="24" rx="4" fill="#15322F"/><text x="465" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#22C55E">Leaflet.js</text>
+      <rect x="550" y="0" width="80" height="24" rx="4" fill="#14243F"/><text x="560" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Bootstrap</text>
+    </g>
+  </g>
+
+  <!-- Layer 3: Backend & Microservices -->
+  <g transform="translate(28, 209)">
+    <rect x="0" y="0" width="824" height="52" rx="6" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="31" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">03 // BACKEND</text>
+    
+    <g transform="translate(160, 14)">
+      <rect x="0" y="0" width="75" height="24" rx="4" fill="#14243F"/><text x="12" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Node.js</text>
+      <rect x="85" y="0" width="85" height="24" rx="4" fill="#14243F"/><text x="95" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Express.js</text>
+      <rect x="180" y="0" width="80" height="24" rx="4" fill="#17355B"/><text x="190" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#2F86FF">FastAPI</text>
+      <rect x="270" y="0" width="60" height="24" rx="4" fill="#14243F"/><text x="280" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Flask</text>
+      <rect x="340" y="0" width="85" height="24" rx="4" fill="#14243F"/><text x="350" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Socket.IO</text>
+      <rect x="435" y="0" width="90" height="24" rx="4" fill="#14243F"/><text x="445" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">REST APIs</text>
+    </g>
+  </g>
+
+  <!-- Layer 4: Spatial Databases & Storage -->
+  <g transform="translate(28, 271)">
+    <rect x="0" y="0" width="824" height="52" rx="6" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="31" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">04 // DATABASES</text>
+    
+    <g transform="translate(160, 14)">
+      <rect x="0" y="0" width="145" height="24" rx="4" fill="#142F4F"/><text x="10" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#2F86FF">PostgreSQL / PostGIS</text>
+      <rect x="155" y="0" width="65" height="24" rx="4" fill="#14243F"/><text x="165" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">MySQL</text>
+      <rect x="230" y="0" width="80" height="24" rx="4" fill="#14243F"/><text x="240" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">MongoDB</text>
+      <rect x="320" y="0" width="65" height="24" rx="4" fill="#3A1728"/><text x="330" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#FF3652">Redis</text>
+      <rect x="395" y="0" width="75" height="24" rx="4" fill="#14243F"/><text x="405" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Firebase</text>
+    </g>
+  </g>
+
+  <!-- Layer 5: AI / Machine Learning -->
+  <g transform="translate(28, 333)">
+    <rect x="0" y="0" width="824" height="52" rx="6" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="31" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">05 // AI &amp; ML</text>
+    
+    <g transform="translate(160, 14)">
+      <rect x="0" y="0" width="95" height="24" rx="4" fill="#142F4F"/><text x="10" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#2F86FF">Scikit-learn</text>
+      <rect x="105" y="0" width="75" height="24" rx="4" fill="#14243F"/><text x="115" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">PyTorch</text>
+      <rect x="190" y="0" width="95" height="24" rx="4" fill="#14243F"/><text x="200" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">TensorFlow</text>
+      <rect x="295" y="0" width="60" height="24" rx="4" fill="#14243F"/><text x="305" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Keras</text>
+      <rect x="365" y="0" width="100" height="24" rx="4" fill="#14243F"/><text x="375" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Transformers</text>
+      <rect x="475" y="0" width="80" height="24" rx="4" fill="#281B34"/><text x="485" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#D8B4FE">NLP Pipeline</text>
+    </g>
+  </g>
+
+  <!-- Layer 6: DevOps, Cloud & Tools -->
+  <g transform="translate(28, 395)">
+    <rect x="0" y="0" width="824" height="52" rx="6" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="31" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">06 // DEVOPS &amp; CLOUD</text>
+    
+    <g transform="translate(160, 14)">
+      <rect x="0" y="0" width="50" height="24" rx="4" fill="#14243F"/><text x="10" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Git</text>
+      <rect x="60" y="0" width="65" height="24" rx="4" fill="#14243F"/><text x="70" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">GitHub</text>
+      <rect x="135" y="0" width="60" height="24" rx="4" fill="#14243F"/><text x="145" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Nginx</text>
+      <rect x="205" y="0" width="55" height="24" rx="4" fill="#14243F"/><text x="215" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">AWS</text>
+      <rect x="270" y="0" width="55" height="24" rx="4" fill="#14243F"/><text x="280" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">GCP</text>
+      <rect x="335" y="0" width="65" height="24" rx="4" fill="#14243F"/><text x="345" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Vercel</text>
+      <rect x="410" y="0" width="85" height="24" rx="4" fill="#14243F"/><text x="420" y="16" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Cloudflare</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 46" width="240" height="46">
+  <rect x="1" y="1" width="238" height="44" rx="8" fill="#101F3B" stroke="#2F86FF" stroke-width="1.4"/>
+  <g transform="translate(16, 14)">
+    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">VIEW SURAKSHAAI REPO</text>
+    <text x="185" y="14" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" fill="#2F86FF">&rarr;</text>
+  </g>
+</svg>

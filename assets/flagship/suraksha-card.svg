@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fl-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#0D1525" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="fl-radar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.05"/>
+    </linearGradient>
+    <pattern id="fl-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#172645" stroke-width="0.8" stroke-opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="430" rx="14" fill="#0D1525" stroke="url(#fl-border)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="880" height="430" rx="14" fill="url(#fl-grid)"/>
+
+  <!-- Top Eyebrow and Badges -->
+  <g transform="translate(30, 26)">
+    <rect x="0" y="0" width="168" height="22" rx="4" fill="#14284D" stroke="#2F86FF" stroke-width="0.8"/>
+    <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">03 // FLAGSHIP BUILD</text>
+
+    <rect x="180" y="0" width="220" height="22" rx="4" fill="#2E1624" stroke="#FF3652" stroke-width="0.8"/>
+    <text x="190" y="15" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FF3652">NATIONAL INNOVATION CHALLENGE</text>
+
+    <text x="730" y="16" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#8B96A8">ROLE: TEAM LEADER</text>
+  </g>
+
+  <!-- Title & Narrative -->
+  <g transform="translate(30, 75)">
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">SurakshaAI</text>
+    <text x="175" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500" fill="#8B96A8">&bull; Real-Time Safety Intelligence Platform</text>
+    
+    <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#C5D0E3">
+      AI-driven geospatial analytics computing a <tspan fill="#2F86FF" font-weight="700">Dynamic Safety Index (DSI)</tspan> to replace static, reactive crime data
+    </text>
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#C5D0E3">
+      with predictive risk forecasts and hazard-aware mobility guidance across India.
+    </text>
+  </g>
+
+  <!-- Interactive System Architecture Blocks -->
+  <g transform="translate(30, 180)">
+    <!-- Box 1: Dynamic Heatmap -->
+    <rect x="0" y="0" width="190" height="140" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="12" y="12" width="28" height="28" rx="6" fill="#152C50"/>
+    <text x="21" y="31" font-family="-apple-system, sans-serif" font-size="15" fill="#2F86FF">&#x1F5FA;</text>
+    <text x="12" y="60" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">Spatial Heatmaps</text>
+    <text x="12" y="80" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Multi-level risk gradients</text>
+    <text x="12" y="96" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">(State &rarr; District &rarr; Grid)</text>
+    <text x="12" y="122" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">Mapbox &bull; Leaflet</text>
+
+    <!-- Box 2: ML Engine -->
+    <rect x="208" y="0" width="190" height="140" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="220" y="12" width="28" height="28" rx="6" fill="#152C50"/>
+    <text x="228" y="31" font-family="-apple-system, sans-serif" font-size="15" fill="#2F86FF">&#x1F9E0;</text>
+    <text x="220" y="60" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">ML Microservice</text>
+    <text x="220" y="80" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">FastAPI Port 8000,</text>
+    <text x="220" y="96" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">RandomForest risk forecast</text>
+    <text x="220" y="122" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">FastAPI &bull; Scikit-learn</text>
+
+    <!-- Box 3: NLP Intelligence -->
+    <rect x="416" y="0" width="190" height="140" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="428" y="12" width="28" height="28" rx="6" fill="#3A1728"/>
+    <text x="436" y="31" font-family="-apple-system, sans-serif" font-size="15" fill="#FF3652">&#x1F4F0;</text>
+    <text x="428" y="60" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">NLP News Signals</text>
+    <text x="428" y="80" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Real-time local news scraping,</text>
+    <text x="428" y="96" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">incident geolocation tagging</text>
+    <text x="428" y="122" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FF3652">NLP &bull; Live Streams</text>
+
+    <!-- Box 4: Safe Navigation & Guardian -->
+    <rect x="624" y="0" width="196" height="140" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="636" y="12" width="28" height="28" rx="6" fill="#152C50"/>
+    <text x="644" y="31" font-family="-apple-system, sans-serif" font-size="15" fill="#22C55E">&#x1F6E1;</text>
+    <text x="636" y="60" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">Safe-Path Routing</text>
+    <text x="636" y="80" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Lowest-risk optimization,</text>
+    <text x="636" y="96" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Guardian SOS session dispatch</text>
+    <text x="636" y="122" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#22C55E">Node.js &bull; Redis &bull; SOS</text>
+  </g>
+
+  <!-- Bottom Architecture Pill Strip -->
+  <g transform="translate(30, 350)">
+    <rect x="0" y="0" width="820" height="52" rx="8" fill="#090E1B" stroke="#172645" stroke-width="1"/>
+    <text x="18" y="30" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#8B96A8">ENGINEERING STACK:</text>
+    
+    <!-- Pills -->
+    <rect x="170" y="14" width="70" height="24" rx="4" fill="#12203A"/>
+    <text x="178" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Node.js</text>
+
+    <rect x="248" y="14" width="75" height="24" rx="4" fill="#12203A"/>
+    <text x="256" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">FastAPI</text>
+
+    <rect x="331" y="14" width="95" height="24" rx="4" fill="#12203A"/>
+    <text x="339" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Scikit-learn</text>
+
+    <rect x="434" y="14" width="95" height="24" rx="4" fill="#12203A"/>
+    <text x="442" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Mapbox API</text>
+
+    <rect x="537" y="14" width="60" height="24" rx="4" fill="#12203A"/>
+    <text x="545" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">MySQL</text>
+
+    <rect x="605" y="14" width="60" height="24" rx="4" fill="#12203A"/>
+    <text x="613" y="30" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Redis</text>
+
+    <rect x="673" y="14" width="134" height="24" rx="4" fill="#1A3428"/>
+    <text x="681" y="30" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#22C55E">&#x2714; REPO VERIFIED</text>
+  </g>
+</svg>

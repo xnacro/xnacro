@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cs-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2F86FF" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="cs-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16223D" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="200" rx="12" fill="#0D1525" stroke="url(#cs-border)" stroke-width="1.2"/>
+  <rect x="0" y="0" width="880" height="200" rx="12" fill="url(#cs-grid)"/>
+
+  <!-- Top bar -->
+  <g transform="translate(24, 20)">
+    <circle cx="5" cy="5" r="4" fill="#22C55E">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="9" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#2F86FF">02 // CURRENT STATE &bull; NOW OPERATING</text>
+    <rect x="740" y="-3" width="90" height="20" rx="4" fill="#14213D"/>
+    <text x="750" y="11" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#22C55E">SPRINT 2026</text>
+  </g>
+
+  <!-- Left Column Card -->
+  <g transform="translate(24, 52)">
+    <rect x="0" y="0" width="400" height="126" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="20" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="1" fill="#8B96A8">NOW BUILDING &bull; FLAGSHIP</text>
+    <text x="20" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="800" fill="#F5F7FA">SurakshaAI Platform</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8B96A8">Dynamic Safety Index, multi-level hazard heatmaps,</text>
+    <text x="20" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#8B96A8">and real-time emergency guardian tracking.</text>
+    <rect x="20" y="102" width="70" height="16" rx="3" fill="#162E52"/>
+    <text x="26" y="114" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2F86FF">SHIPPING</text>
+  </g>
+
+  <!-- Right Column Card -->
+  <g transform="translate(444, 52)">
+    <rect x="0" y="0" width="412" height="126" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="20" y="26" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="1" fill="#8B96A8">CURRENT TECHNICAL FOCUS</text>
+    
+    <text x="20" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#F5F7FA">Spatial Modeling:</text>
+    <text x="135" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#8B96A8">PostGIS 500m grids, risk-weighted cost routing</text>
+
+    <text x="20" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#F5F7FA">Microservices:</text>
+    <text x="135" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#8B96A8">Node.js API gateway + FastAPI ML intelligence</text>
+
+    <text x="20" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#F5F7FA">Availability:</text>
+    <text x="135" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#22C55E">Open for high-impact engineering collaborations</text>
+  </g>
+</svg>

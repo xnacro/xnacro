@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wib-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2F86FF" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="wib-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16223D" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="320" rx="14" fill="#0D1525" stroke="url(#wib-border)" stroke-width="1.2"/>
+  <rect x="0" y="0" width="880" height="320" rx="14" fill="url(#wib-grid)"/>
+
+  <!-- Top bar -->
+  <g transform="translate(24, 24)">
+    <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#2F86FF">04 // WHAT I BUILD &bull; CORE ENGINEERING DOMAINS</text>
+    <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">Positioned as a Systems Architect &amp; Product Engineer</text>
+  </g>
+
+  <!-- 3 Domain Columns -->
+  <g transform="translate(24, 85)">
+    <!-- Column 1: Spatial & Hazard -->
+    <rect x="0" y="0" width="264" height="205" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="16" y="16" width="32" height="32" rx="6" fill="#14284D"/>
+    <text x="26" y="38" font-family="-apple-system, sans-serif" font-size="16" fill="#2F86FF">&#x1F30D;</text>
+    <text x="16" y="74" font-family="-apple-system, sans-serif" font-size="14" font-weight="800" fill="#F5F7FA">Spatial &amp; Hazard Intelligence</text>
+    <text x="16" y="96" font-family="-apple-system, sans-serif" font-size="12" fill="#8B96A8" line-height="18">
+      <tspan x="16" dy="0">408,000+ cell risk surfaces, dynamic</tspan>
+      <tspan x="16" dy="18">hazard cost routing, PostGIS spatial</tspan>
+      <tspan x="16" dy="18">SSOT grids &amp; incident heatmaps.</tspan>
+    </text>
+    <rect x="16" y="162" width="232" height="26" rx="4" fill="#0F1B30"/>
+    <text x="24" y="179" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#2F86FF">RESQ &bull; SurakshaAI &bull; PostGIS</text>
+
+    <!-- Column 2: AI & Predictive Systems -->
+    <rect x="284" y="0" width="264" height="205" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="300" y="16" width="32" height="32" rx="6" fill="#2B1626"/>
+    <text x="310" y="38" font-family="-apple-system, sans-serif" font-size="16" fill="#FF3652">&#x2699;</text>
+    <text x="300" y="74" font-family="-apple-system, sans-serif" font-size="14" font-weight="800" fill="#F5F7FA">AI &amp; Predictive Microservices</text>
+    <text x="300" y="96" font-family="-apple-system, sans-serif" font-size="12" fill="#8B96A8" line-height="18">
+      <tspan x="300" dy="0">Decoupled ML inference pipelines,</tspan>
+      <tspan x="300" dy="18">spatial crime clustering, NLP live</tspan>
+      <tspan x="300" dy="18">news scraping &amp; anomaly forecasting.</tspan>
+    </text>
+    <rect x="300" y="162" width="232" height="26" rx="4" fill="#22131F"/>
+    <text x="308" y="179" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#FF3652">FastAPI &bull; Scikit-learn &bull; NLP</text>
+
+    <!-- Column 3: Full-Stack Platforms -->
+    <rect x="568" y="0" width="264" height="205" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <rect x="584" y="16" width="32" height="32" rx="6" fill="#14284D"/>
+    <text x="594" y="38" font-family="-apple-system, sans-serif" font-size="16" fill="#22C55E">&#x26A1;</text>
+    <text x="584" y="74" font-family="-apple-system, sans-serif" font-size="14" font-weight="800" fill="#F5F7FA">Production Web Platforms</text>
+    <text x="584" y="96" font-family="-apple-system, sans-serif" font-size="12" fill="#8B96A8" line-height="18">
+      <tspan x="584" dy="0">High-concurrency Node.js servers,</tspan>
+      <tspan x="584" dy="18">Socket.IO live monitoring, responsive</tspan>
+      <tspan x="584" dy="18">React frontends &amp; clean REST APIs.</tspan>
+    </text>
+    <rect x="584" y="162" width="232" height="26" rx="4" fill="#0F241F"/>
+    <text x="592" y="179" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#22C55E">React &bull; Node &bull; Redis &bull; Sockets</text>
+  </g>
+</svg>

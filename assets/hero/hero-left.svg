@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hl-grad-text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#2F86FF"/>
+    </linearGradient>
+    <linearGradient id="hl-card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.3"/>
+    </linearGradient>
+    <pattern id="hl-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16223D" stroke-width="0.75" stroke-opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background card -->
+  <rect x="0" y="0" width="540" height="380" rx="14" fill="#0D1525" stroke="url(#hl-card-border)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="540" height="380" rx="14" fill="url(#hl-grid)"/>
+
+  <!-- Top Metadata Bar -->
+  <g transform="translate(24, 28)">
+    <rect x="0" y="0" width="10" height="10" rx="5" fill="#2F86FF">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="18" y="9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#2F86FF">OPERATIONAL SYSTEM</text>
+    <rect x="180" y="-1" width="120" height="18" rx="4" fill="#14213d" stroke="#2F86FF" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="188" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="10" font-weight="600" fill="#8B96A8">IDENTITY // XNACRO</text>
+  </g>
+
+  <!-- Eyebrow -->
+  <text x="24" y="78" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" letter-spacing="2" fill="#8B96A8">ENGINEER &bull; SYSTEM ARCHITECT &bull; BUILDER</text>
+
+  <!-- Headline -->
+  <text x="24" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-1" fill="#FFFFFF">THE PERSON</text>
+  <text x="24" y="172" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-1" fill="url(#hl-grad-text)">BEHIND THE CODE<tspan fill="#FF3652">.</tspan></text>
+
+  <!-- Positioning Subtitle -->
+  <text x="24" y="214" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="14" font-weight="400" fill="#8B96A8" line-height="22">
+    <tspan x="24" dy="0">Engineering spatial risk models, predictive AI microservices,</tspan>
+    <tspan x="24" dy="20">and high-concurrency production platforms that actually ship.</tspan>
+  </text>
+
+  <!-- Identity Pill Badges -->
+  <g transform="translate(24, 270)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="130" height="28" rx="6" fill="#101C33" stroke="#2F86FF" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="12" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="11" font-weight="700" fill="#F5F7FA">PRINCE TIWARI</text>
+
+    <!-- Pill 2 -->
+    <rect x="140" y="0" width="152" height="28" rx="6" fill="#101C33" stroke="#2F86FF" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="150" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="11" font-weight="600" fill="#8B96A8">TEAM LEGACY CODERZ</text>
+
+    <!-- Pill 3 -->
+    <rect x="302" y="0" width="90" height="28" rx="6" fill="#101C33" stroke="#FF3652" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="312" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="11" font-weight="600" fill="#FF3652">📍 INDIA</text>
+  </g>
+
+  <!-- Bottom Terminal Status Bar -->
+  <g transform="translate(24, 324)">
+    <rect x="0" y="0" width="492" height="34" rx="6" fill="#0A1020" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="14" y="21" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#2F86FF">&gt;</text>
+    <text x="30" y="21" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" fill="#8B96A8">FOCUS: <tspan fill="#F5F7FA">AI &times; Spatial Risk &times; Production Web</tspan></text>
+    <rect x="424" y="10" width="54" height="14" rx="3" fill="#173426"/>
+    <text x="432" y="21" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9" font-weight="700" fill="#22C55E">ONLINE</text>
+  </g>
+</svg>

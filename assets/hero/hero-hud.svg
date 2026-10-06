@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 72" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hud-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FF3652" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2F86FF" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="72" rx="10" fill="#0A101F" stroke="url(#hud-border)" stroke-width="1.2"/>
+
+  <!-- Segment 1 -->
+  <g transform="translate(28, 22)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#8B96A8">EXECUTION MODE</text>
+    <circle cx="4" cy="28" r="4" fill="#22C55E"/>
+    <text x="16" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#F5F7FA">ACTIVE SHIPPING</text>
+  </g>
+
+  <!-- Divider 1 -->
+  <line x1="200" y1="16" x2="200" y2="56" stroke="#1F2F4F" stroke-width="1"/>
+
+  <!-- Segment 2 -->
+  <g transform="translate(228, 22)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#8B96A8">FLAGSHIP PLATFORM</text>
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#2F86FF">SurakshaAI &bull; DSI Engine</text>
+  </g>
+
+  <!-- Divider 2 -->
+  <line x1="435" y1="16" x2="435" y2="56" stroke="#1F2F4F" stroke-width="1"/>
+
+  <!-- Segment 3 -->
+  <g transform="translate(460, 22)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#8B96A8">SPATIAL INDEX SCALE</text>
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#F5F7FA">408,986 Grid Cells</text>
+  </g>
+
+  <!-- Divider 3 -->
+  <line x1="660" y1="16" x2="660" y2="56" stroke="#1F2F4F" stroke-width="1"/>
+
+  <!-- Segment 4 -->
+  <g transform="translate(685, 22)">
+    <text x="0" y="12" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" letter-spacing="1" fill="#8B96A8">CORE ECOSYSTEM</text>
+    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#FF3652">MERN &bull; FastAPI &bull; PostGIS</text>
+  </g>
+</svg>

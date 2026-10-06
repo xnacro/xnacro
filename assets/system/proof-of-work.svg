@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pow-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2F86FF" stop-opacity="0.1"/>
+    </linearGradient>
+    <pattern id="pow-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#16223D" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="880" height="280" rx="14" fill="#0D1525" stroke="url(#pow-border)" stroke-width="1.2"/>
+  <rect x="0" y="0" width="880" height="280" rx="14" fill="url(#pow-grid)"/>
+
+  <!-- Top bar -->
+  <g transform="translate(28, 24)">
+    <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5" fill="#2F86FF">07 // PROOF OF WORK &bull; VERIFIED EVIDENCE &amp; MILESTONES</text>
+    <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">Real Engineered Systems &amp; Hackathon Submissions</text>
+  </g>
+
+  <!-- 3 Metric Dashboard Cards -->
+  <g transform="translate(28, 85)">
+    <!-- Metric 1: RESQ 408k cells -->
+    <rect x="0" y="0" width="260" height="165" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#2F86FF">IIT GUWAHATI HACKATHON</text>
+    <text x="16" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">408,986</text>
+    <text x="16" y="86" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#F5F7FA">500m Hazard Grid Cells</text>
+    <text x="16" y="108" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8" line-height="16">
+      <tspan x="16" dy="0">PostGIS risk surface covering Assam &amp;</tspan>
+      <tspan x="16" dy="16">Meghalaya for relief convoy routing.</tspan>
+    </text>
+    <rect x="16" y="132" width="80" height="20" rx="3" fill="#14284D"/>
+    <text x="24" y="146" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#2F86FF">RESQ CORE</text>
+
+    <!-- Metric 2: SurakshaAI -->
+    <rect x="282" y="0" width="260" height="165" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FF3652">NATIONAL INNOVATION</text>
+    <text x="16" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">MULTI-TIER</text>
+    <text x="16" y="86" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#F5F7FA">Real-Time Safety Engine</text>
+    <text x="16" y="108" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8" line-height="16">
+      <tspan x="16" dy="0">Team Leader, Legacy Coderz.</tspan>
+      <tspan x="16" dy="16">Dynamic Safety Index + Guardian SOS.</tspan>
+    </text>
+    <rect x="16" y="132" width="105" height="20" rx="3" fill="#2E1624"/>
+    <text x="24" y="146" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#FF3652">FLAGSHIP BUILD</text>
+
+    <!-- Metric 3: Hybrid ML & Full-Stack -->
+    <rect x="564" y="0" width="260" height="165" rx="8" fill="#0A101F" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#22C55E">ARCHITECTURE MATURITY</text>
+    <text x="16" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">HYBRID</text>
+    <text x="16" y="86" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#F5F7FA">Decoupled Microservices</text>
+    <text x="16" y="108" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8" line-height="16">
+      <tspan x="16" dy="0">Node.js orchestrator + FastAPI</tspan>
+      <tspan x="16" dy="16">inference + Redis in live testing.</tspan>
+    </text>
+    <rect x="16" y="132" width="95" height="20" rx="3" fill="#143424"/>
+    <text x="24" y="146" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#22C55E">PRODUCTION</text>
+  </g>
+</svg>
