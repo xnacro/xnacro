@@ -3,104 +3,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GitHub Profile Experience Preview — Prince Tiwari (@xnacro)</title>
+  <title>Prince Tiwari (@xnacro) — GitHub Profile Experience & Systems Operating System</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --gh-bg: #0d1117;
+      --gh-canvas: #010409;
       --gh-border: #30363d;
+      --gh-border-subtle: rgba(48, 54, 61, 0.6);
       --gh-text: #c9d1d9;
+      --gh-text-muted: #8b949e;
       --gh-heading: #f0f6fc;
       --gh-link: #58a6ff;
-      --gh-btn-bg: #21262d;
+      --gh-link-hover: #79c0ff;
+      --gh-btn-bg: #161b22;
+      --gh-accent-blue: #247bff;
+      --gh-accent-cyan: #38bdf8;
+      --gh-accent-purple: #a855f7;
+      --gh-accent-gold: #f59e0b;
+      --gh-accent-crimson: #ff354f;
+      --gh-accent-green: #10b981;
+      --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-subheading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
 
     [data-theme="light"] {
       --gh-bg: #ffffff;
+      --gh-canvas: #f6f8fa;
       --gh-border: #d0d7de;
+      --gh-border-subtle: rgba(208, 215, 222, 0.6);
       --gh-text: #24292f;
+      --gh-text-muted: #57606a;
       --gh-heading: #1f2328;
       --gh-link: #0969da;
-      --gh-btn-bg: #f6f8fa;
+      --gh-link-hover: #0550ae;
+      --gh-btn-bg: #f3f4f6;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-      background-color: #010409;
+      font-family: var(--font-sans);
+      background-color: var(--gh-canvas);
       color: var(--gh-text);
-      line-height: 1.5;
+      line-height: 1.6;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Top Control Toolbar */
+    /* =========================================================================
+       Top Responsive Navigation & Controls Toolbar
+       ========================================================================= */
     .toolbar {
       position: sticky;
       top: 0;
       z-index: 1000;
       width: 100%;
-      background: rgba(13, 17, 23, 0.95);
-      backdrop-filter: blur(12px);
+      background: rgba(13, 17, 23, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--gh-border);
-      padding: 10px 24px;
+      padding: 12px 24px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
+    }
+
+    .toolbar-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
     }
 
     .toolbar-brand {
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 700;
-      font-size: 14px;
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.5px;
       color: #f0f6fc;
     }
 
-    .toolbar-brand .dot {
+    .toolbar-brand .dot-live {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #247bff;
-      box-shadow: 0 0 10px #247bff;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+      animation: pulseLive 2s infinite;
+    }
+
+    @keyframes pulseLive {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .badge-status {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 20px;
+      background: rgba(36, 123, 255, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: var(--gh-accent-cyan);
+      letter-spacing: 0.5px;
     }
 
     .btn-group {
       display: flex;
       align-items: center;
       gap: 6px;
-      background: #161b22;
+      background: var(--gh-btn-bg);
       padding: 4px;
-      border-radius: 8px;
+      border-radius: 10px;
       border: 1px solid var(--gh-border);
     }
 
     .btn {
       background: transparent;
       border: none;
-      color: #8b949e;
+      color: var(--gh-text-muted);
+      font-family: var(--font-sans);
       font-size: 12px;
       font-weight: 600;
       padding: 6px 14px;
       border-radius: 6px;
       cursor: pointer;
-      transition: all 0.2s ease;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .btn:hover { color: #f0f6fc; background: rgba(255, 255, 255, 0.06); }
-    .btn.active { color: #ffffff; background: #238636; }
+    .btn:hover { color: #f0f6fc; background: rgba(255, 255, 255, 0.08); }
+    .btn.active { color: #ffffff; background: #238636; box-shadow: 0 2px 8px rgba(35, 134, 54, 0.4); }
 
-    /* Frame container */
+    .btn-speed {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--gh-accent-cyan);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .btn-speed:hover { background: rgba(56, 189, 248, 0.15); }
+    .btn-speed.active { background: var(--gh-accent-blue); color: #fff; }
+
+    /* =========================================================================
+       Main Responsive Container
+       ========================================================================= */
     .viewport-wrapper {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding: 32px 16px 80px;
+      padding: 32px 16px 100px;
     }
 
     .github-frame {
@@ -108,24 +179,72 @@
       max-width: 980px;
       background: var(--gh-bg);
       border: 1px solid var(--gh-border);
-      border-radius: 12px;
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
-      transition: max-width 0.3s ease;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.75);
+      transition: max-width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .github-header {
       padding: 14px 24px;
-      background: rgba(22, 27, 34, 0.6);
+      background: rgba(22, 27, 34, 0.7);
       border-bottom: 1px solid var(--gh-border);
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 12px;
       font-size: 13px;
     }
 
+    .github-breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--gh-heading);
+    }
+
+    .github-breadcrumbs a {
+      color: var(--gh-link);
+      text-decoration: none;
+    }
+    .github-breadcrumbs a:hover { text-decoration: underline; }
+
+    /* Verified Bio HUD Bar */
+    .profile-bio-hud {
+      background: linear-gradient(90deg, rgba(36, 123, 255, 0.08), rgba(168, 85, 247, 0.06), rgba(255, 53, 79, 0.08));
+      border-bottom: 1px solid var(--gh-border);
+      padding: 14px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12.5px;
+    }
+
+    .bio-left {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .bio-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 14px;
+      background: rgba(13, 21, 37, 0.7);
+      border: 1px solid var(--gh-border);
+      color: var(--gh-heading);
+      font-weight: 600;
+    }
+
+    /* Markdown Body Content */
     .markdown-body {
-      padding: 32px 24px;
+      padding: 32px 28px;
       background: var(--gh-bg);
     }
 
@@ -134,126 +253,757 @@
       height: auto;
       display: block;
       margin: 16px auto;
-      border-radius: 12px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.25s ease;
+    }
+    .markdown-body img:hover {
+      transform: translateY(-2px);
     }
 
-    .markdown-body table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-    }
-
-    .markdown-body th, .markdown-body td {
-      padding: 10px 14px;
-      border: 1px solid var(--gh-border);
-      font-size: 13.5px;
-    }
-
-    .markdown-body th {
-      background: rgba(22, 27, 34, 0.8);
+    /* Subheadings styling */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
       color: var(--gh-heading);
-      text-align: left;
+      margin: 36px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.3px;
     }
 
-    .markdown-body a {
+    .section-eyebrow {
+      font-family: var(--font-subheading);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gh-accent-cyan);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* Honors & Achievements Grid */
+    .honors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+      margin: 20px 0 32px;
+    }
+
+    .honor-card {
+      background: rgba(13, 21, 37, 0.65);
+      border: 1px solid var(--gh-border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .honor-card:hover {
+      border-color: var(--gh-accent-cyan);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(36, 123, 255, 0.15);
+    }
+
+    .honor-card.gold { border-left: 4px solid var(--gh-accent-gold); }
+    .honor-card.crimson { border-left: 4px solid var(--gh-accent-crimson); }
+    .honor-card.blue { border-left: 4px solid var(--gh-accent-blue); }
+    .honor-card.purple { border-left: 4px solid var(--gh-accent-purple); }
+
+    .honor-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .honor-tag {
+      font-family: var(--font-subheading);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .honor-card.gold .honor-tag { color: var(--gh-accent-gold); }
+    .honor-card.crimson .honor-tag { color: var(--gh-accent-crimson); }
+    .honor-card.blue .honor-tag { color: var(--gh-accent-cyan); }
+    .honor-card.purple .honor-tag { color: var(--gh-accent-purple); }
+
+    .honor-title {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--gh-heading);
+      margin-bottom: 4px;
+    }
+
+    .honor-desc {
+      font-size: 12.5px;
+      color: var(--gh-text-muted);
+      line-height: 1.5;
+    }
+
+    /* Planetary Interactive Spotlight */
+    .planetary-spotlight {
+      background: radial-gradient(circle at 50% 50%, rgba(36, 123, 255, 0.12), transparent 70%), rgba(10, 16, 30, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 24px 0;
+      position: relative;
+    }
+
+    .planetary-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .planet-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: rgba(16, 26, 48, 0.8);
+      border: 1px solid var(--gh-border);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gh-heading);
+    }
+
+    .planet-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    /* Repositories Interactive Filter Bar */
+    .repo-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 20px;
+    }
+
+    .repo-filter-btn {
+      background: var(--gh-btn-bg);
+      border: 1px solid var(--gh-border);
+      color: var(--gh-text-muted);
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .repo-filter-btn:hover {
+      color: #fff;
+      border-color: var(--gh-link);
+    }
+
+    .repo-filter-btn.active {
+      background: rgba(36, 123, 255, 0.2);
+      border-color: var(--gh-accent-cyan);
+      color: #fff;
+    }
+
+    /* Repository Cards Container */
+    .repo-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 16px;
+      margin: 16px 0 36px;
+    }
+
+    .repo-card {
+      background: rgba(14, 22, 38, 0.7);
+      border: 1px solid var(--gh-border);
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .repo-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gh-link);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .repo-card-top {
+      margin-bottom: 12px;
+    }
+
+    .repo-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .repo-name {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 800;
       color: var(--gh-link);
       text-decoration: none;
-      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .markdown-body a:hover {
-      text-decoration: underline;
+    .repo-name:hover { text-decoration: underline; }
+
+    .repo-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      background: rgba(36, 123, 255, 0.15);
+      color: var(--gh-accent-cyan);
+      border: 1px solid rgba(56, 189, 248, 0.3);
     }
 
+    .repo-badge.hackathon {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--gh-accent-gold);
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .repo-desc {
+      font-size: 12.5px;
+      color: var(--gh-text);
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+
+    .repo-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(48, 54, 61, 0.4);
+      font-size: 11.5px;
+      color: var(--gh-text-muted);
+    }
+
+    .repo-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag-pill {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+    }
+
+    /* Social Row */
     .social-row {
       display: flex;
       justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin-top: 24px;
     }
 
     .social-row img {
-      display: inline-block;
       margin: 0;
+      box-shadow: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .toolbar { padding: 10px 16px; }
+      .markdown-body { padding: 20px 16px; }
+      .honors-grid { grid-template-columns: 1fr; }
+      .repo-cards-grid { grid-template-columns: 1fr; }
+      .btn-speed-group { display: none; }
     }
   </style>
 </head>
 <body data-theme="dark">
 
+  <!-- =========================================================================
+       Top Responsive Simulation & Device Controls
+       ========================================================================= -->
   <header class="toolbar">
-    <div class="toolbar-brand">
-      <div class="dot"></div>
-      <span>XNACRO // GITHUB PROFILE PLAYBOOK PREVIEW</span>
+    <div class="toolbar-left">
+      <div class="toolbar-brand">
+        <div class="dot-live"></div>
+        <span>XNACRO // HIGH-VELOCITY PLAYBOOK</span>
+      </div>
+      <span class="badge-status">v2.0 PLANETARY ENGINE</span>
     </div>
 
+    <!-- Responsive Device Switcher -->
     <div class="btn-group">
       <button class="btn active" id="btn-desktop" onclick="setMode('desktop')">🖥️ Desktop (980px)</button>
-      <button class="btn" id="btn-narrow" onclick="setMode('narrow')">💻 Narrow (768px)</button>
+      <button class="btn" id="btn-narrow" onclick="setMode('narrow')">💻 Tablet (768px)</button>
       <button class="btn" id="btn-mobile" onclick="setMode('mobile')">📱 Mobile (390px)</button>
+      <button class="btn" id="btn-fluid" onclick="setMode('fluid')">🌐 Fluid (100%)</button>
     </div>
 
-    <div class="btn-group">
-      <button class="btn" onclick="toggleTheme()">🌓 Toggle Theme</button>
+    <!-- Theme & Quick Orbit Speed -->
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <div class="btn-group btn-speed-group">
+        <span style="font-size: 11px; font-weight: 700; color: #8b949e; padding-left: 6px;">Orbit Speed:</span>
+        <button class="btn-speed active" onclick="setOrbitSpeed(1)">1x</button>
+        <button class="btn-speed" onclick="setOrbitSpeed(2)">2x</button>
+        <button class="btn-speed" onclick="setOrbitSpeed(0.5)">0.5x</button>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" onclick="toggleTheme()">🌓 Theme</button>
+      </div>
     </div>
   </header>
 
+  <!-- =========================================================================
+       Main GitHub Profile Frame Simulation
+       ========================================================================= -->
   <main class="viewport-wrapper">
     <div class="github-frame" id="preview-frame">
+      
+      <!-- GitHub Frame Breadcrumb Header -->
       <div class="github-header">
-        <div style="font-weight: 600; color: #f0f6fc;">
-          <a href="https://github.com/xnacro" style="color: #58a6ff; text-decoration: none;">xnacro</a> / <strong>xnacro</strong> (README.md)
+        <div class="github-breadcrumbs">
+          <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor" style="color: #8b949e;">
+            <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h7a.25.25 0 0 1 .25.25v1.25a.25.25 0 0 1-.25.25h-7a.25.25 0 0 1-.25-.25Z"></path>
+          </svg>
+          <a href="https://github.com/xnacro">xnacro</a> / <strong>xnacro</strong> (README.md)
         </div>
-        <span style="font-size: 11px; padding: 2px 8px; border-radius: 12px; background: rgba(56, 139, 253, 0.15); color: #58a6ff; border: 1px solid rgba(56, 139, 253, 0.4);">
-          Special Repository
-        </span>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          <span style="font-size: 11px; padding: 2px 10px; border-radius: 12px; background: rgba(56, 189, 253, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 253, 0.4); font-weight: 700;">
+            Special Profile Repository
+          </span>
+        </div>
       </div>
 
+      <!-- Quick Verified Identity HUD Strip -->
+      <div class="profile-bio-hud">
+        <div class="bio-left">
+          <span class="bio-pill">👨‍💻 <strong>Prince Tiwari</strong> (Prince Kumar)</span>
+          <span class="bio-pill" style="border-color: rgba(36, 123, 255, 0.4);">🚀 Building <strong>Surakshaai.org</strong></span>
+          <span class="bio-pill" style="border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">🏆 2nd @ Cognithon IIIT Bhagalpur</span>
+          <span class="bio-pill" style="border-color: rgba(255, 53, 79, 0.4); color: #ff8a9a;">🇮🇳 Finalist India Innovates '26</span>
+          <span class="bio-pill" style="border-color: rgba(36, 123, 255, 0.4); color: #60a5fa;">⚡ Flipkart GRiD '26 Semi-Finalist</span>
+        </div>
+        <div style="font-size: 11.5px; color: #8b949e; font-weight: 600;">
+          📍 Muzaffarpur, Bihar, India &bull; B.Tech CSE (AI & ML)
+        </div>
+      </div>
+
+      <!-- Markdown Article -->
       <article class="markdown-body">
+        
+        <!-- ================= 01 HERO SECTION ================= -->
         <div align="center">
-          <img src="./assets/hero.svg?v=1" alt="Intro" />
+          <img id="img-hero" src="./assets/hero.svg?v=2" alt="Prince Tiwari — Full-Stack & AI/ML Systems" />
           <br/>
-          <img src="./assets/about-life.svg?v=1" alt="About" />
+          
+          <!-- ================= 02 ABOUT & PHILOSOPHY ================= -->
+          <img id="img-about" src="./assets/about-life.svg?v=2" alt="About & Architectural Philosophy" />
           <br/>
-          <img src="./assets/stack.svg?v=1" alt="Stack" />
+          
+          <!-- ================= 03 PLANETARY ENGINE ROOM ================= -->
+          <img id="img-stack" src="./assets/stack.svg?v=2" alt="Planetary Engine Room & Verified Tech Stack" />
           <br/>
-          <img src="./assets/id-dashboard.svg?v=1" alt="ID" />
+          
+          <!-- ================= 04 NATIONAL CREDENTIALS ================= -->
+          <img id="img-dashboard" src="./assets/id-dashboard.svg?v=2" alt="National Credentials & Verification Dashboard" />
         </div>
 
-        <br/>
+        <!-- ================= VERIFIED NATIONAL HONORS GRID ================= -->
+        <div style="margin-top: 36px;">
+          <span class="section-eyebrow">VERIFIED COMPETITIVE HONORS</span>
+          <h3 class="section-title">🏆 National Honors &amp; Verified Achievements</h3>
 
-        <h3 style="color: #f0f6fc; margin: 20px 0 10px;">🚀 Things I've Built</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Project</th>
-              <th>What it does</th>
-              <th>Focus</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong><a href="https://github.com/xnacro/SurakshaAI" target="_blank">SurakshaAI</a></strong></td>
-              <td>AI-powered geospatial safety analytics platform computing Dynamic Safety Index (DSI)</td>
-              <td>Spatial AI + Microservices</td>
-            </tr>
-            <tr>
-              <td><strong><a href="https://github.com/xnacro/RESQ" target="_blank">RESQ</a></strong></td>
-              <td>Damage-aware relief supply chain routing across 408,986 500m cells</td>
-              <td>PostGIS + Valhalla Routing</td>
-            </tr>
-            <tr>
-              <td><strong><a href="https://github.com/xnacro/GridShare" target="_blank">GridShare</a></strong></td>
-              <td>Peer-to-peer decentralized energy distribution &amp; grid optimization</td>
-              <td>Full-Stack + Distributed Systems</td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="honors-grid">
+            <!-- Card 1 -->
+            <div class="honor-card gold">
+              <div class="honor-header">
+                <span class="honor-tag">2nd Prize &bull; Winner</span>
+                <span style="font-size: 18px;">🏆</span>
+              </div>
+              <div class="honor-title">Cognithon National Hackathon</div>
+              <div class="honor-desc">
+                Organized by <strong>IIIT Bhagalpur</strong>. Recognized for architectural excellence, spatial risk intelligence, and high-impact deployment under competitive constraints.
+              </div>
+            </div>
 
-        <br/>
+            <!-- Card 2 -->
+            <div class="honor-card crimson">
+              <div class="honor-header">
+                <span class="honor-tag">National Finalist</span>
+                <span style="font-size: 18px;">🇮🇳</span>
+              </div>
+              <div class="honor-title">India Innovates 2026</div>
+              <div class="honor-desc">
+                Pan-India civic innovation challenge. Selected among top engineering squads nationwide for designing damage-aware disaster relief routing infrastructure.
+              </div>
+            </div>
 
-        <div align="center">
-          <img src="./assets/connect.svg?v=1" alt="Connect" />
+            <!-- Card 3 -->
+            <div class="honor-card blue">
+              <div class="honor-header">
+                <span class="honor-tag">National Semi-Finalist</span>
+                <span style="font-size: 18px;">⚡</span>
+              </div>
+              <div class="honor-title">Flipkart GRiD 2026</div>
+              <div class="honor-desc">
+                India's flagship engineering campus challenge. Evaluated on large-scale distributed architectures, algorithmic problem solving, and production resilience.
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="honor-card purple">
+              <div class="honor-header">
+                <span class="honor-tag">Founder &bull; Live System</span>
+                <span style="font-size: 18px;">🌐</span>
+              </div>
+              <div class="honor-title">Surakshaai.org Platform</div>
+              <div class="honor-desc">
+                Proprietary AI geospatial safety intelligence platform computing Dynamic Safety Index (DSI) across live telemetry and street risk surfaces.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= INTERACTIVE PLANETARY SPOTLIGHT GUIDE ================= -->
+        <div class="planetary-spotlight">
+          <span class="section-eyebrow" style="color: #38bdf8;">ORBITAL VISUALIZATION INTELLIGENCE</span>
+          <h4 style="font-family: var(--font-display); font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 6px;">
+            🪐 Planetary Orbit Mechanics in Section 03 (Engine Room)
+          </h4>
+          <p style="font-size: 13px; color: #cbd5e1; line-height: 1.5;">
+            The central core <strong>PT (Prince Tiwari)</strong> radiates continuous execution energy, while 5 planetary systems revolve along precision elliptical trajectories:
+          </p>
+
+          <div class="planetary-legend">
+            <div class="planet-chip">
+              <div class="planet-dot" style="background: #38bdf8; box-shadow: 0 0 8px #38bdf8;"></div>
+              <span><strong>Py (Python / AI Core)</strong> &bull; with orbiting PyTorch Moon</span>
+            </div>
+            <div class="planet-chip">
+              <div class="planet-dot" style="background: #a855f7; box-shadow: 0 0 8px #a855f7;"></div>
+              <span><strong>ML (Deep Learning)</strong> &bull; Transformers, OpenCV, Scikit</span>
+            </div>
+            <div class="planet-chip">
+              <div class="planet-dot" style="background: #247bff; box-shadow: 0 0 8px #247bff;"></div>
+              <span><strong>Re (React / UI)</strong> &bull; Next.js, MapLibre GL, Leaflet</span>
+            </div>
+            <div class="planet-chip">
+              <div class="planet-dot" style="background: #ff354f; box-shadow: 0 0 8px #ff354f;"></div>
+              <span><strong>GIS (Spatial Engine)</strong> &bull; PostGIS, 408k cells, Valhalla</span>
+            </div>
+            <div class="planet-chip">
+              <div class="planet-dot" style="background: #10b981; box-shadow: 0 0 8px #10b981;"></div>
+              <span><strong>API (Distributed Backends)</strong> &bull; FastAPI, Node.js, Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= COMPLETE REPOSITORIES SHOWCASE ================= -->
+        <div style="margin-top: 36px;">
+          <span class="section-eyebrow">COMPLETE ENGINEERING PORTFOLIO</span>
+          <h3 class="section-title">🚀 Complete Systems &amp; Repositories Showcase</h3>
+          <p style="font-size: 13.5px; color: #8b949e; margin-bottom: 12px;">
+            Full spectrum of production platforms, national hackathon entries, RAG pipelines, and real-time network engines built by Prince Tiwari.
+          </p>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="repo-filters">
+            <button class="repo-filter-btn active" onclick="filterRepos('all')">All Builds (11)</button>
+            <button class="repo-filter-btn" onclick="filterRepos('flagship')">🌟 Flagship &amp; Hackathons</button>
+            <button class="repo-filter-btn" onclick="filterRepos('aiml')">🧠 AI / ML &amp; Intelligence</button>
+            <button class="repo-filter-btn" onclick="filterRepos('realtime')">⚡ Real-Time &amp; Systems</button>
+            <button class="repo-filter-btn" onclick="filterRepos('sandbox')">🛠️ Core Sandboxes</button>
+          </div>
+
+          <!-- Repository Cards Grid -->
+          <div class="repo-cards-grid" id="repo-cards-container">
+
+            <!-- Card: SurakshaAI -->
+            <div class="repo-card" data-category="flagship aiml">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/SurakshaAI" target="_blank" class="repo-name">
+                    <span>SurakshaAI</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">Active Platform</span>
+                </div>
+                <div class="repo-desc">
+                  AI-powered geospatial safety analytics platform computing Dynamic Safety Index (DSI) and real-time hazard heatmaps.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">FastAPI</span>
+                  <span class="tag-pill">MapLibre GL</span>
+                  <span class="tag-pill">PostGIS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: RESQ -->
+            <div class="repo-card" data-category="flagship">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/RESQ" target="_blank" class="repo-name">
+                    <span>RESQ</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge hackathon">India Innovates</span>
+                </div>
+                <div class="repo-desc">
+                  Damage-aware relief supply chain routing across 408,986 500m hazard cells during major natural disasters.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Valhalla</span>
+                  <span class="tag-pill">PostGIS</span>
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">Spatial AI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: GridShare -->
+            <div class="repo-card" data-category="flagship realtime">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/GridShare" target="_blank" class="repo-name">
+                    <span>GridShare</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge hackathon">IIT Guwahati</span>
+                </div>
+                <div class="repo-desc">
+                  Intelligent community microgrid energy coordinator simulating solar, battery &amp; EV surplus with P2P trade mechanisms.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Distributed</span>
+                  <span class="tag-pill">Node.js</span>
+                  <span class="tag-pill">React</span>
+                  <span class="tag-pill">Simulation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: MednormAI -->
+            <div class="repo-card" data-category="flagship aiml">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/MednormAI" target="_blank" class="repo-name">
+                    <span>MednormAI</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge hackathon">IIT Patna</span>
+                </div>
+                <div class="repo-desc">
+                  AI clinical data normalization engine transforming messy medical PDFs and lab billing statements into structured FHIR records.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">OCR</span>
+                  <span class="tag-pill">NLP</span>
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">Healthcare AI</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: OpenRAG -->
+            <div class="repo-card" data-category="aiml">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/OpenRAG" target="_blank" class="repo-name">
+                    <span>OpenRAG</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">AI / ML</span>
+                </div>
+                <div class="repo-desc">
+                  End-to-end production RAG pipeline with dense document embeddings, vector database indexing &amp; hybrid semantic retrieval.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">PyTorch</span>
+                  <span class="tag-pill">Transformers</span>
+                  <span class="tag-pill">Vector DB</span>
+                  <span class="tag-pill">LangChain</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: UIDAI-Hackathon -->
+            <div class="repo-card" data-category="aiml flagship">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/UIDAI-Hackathon" target="_blank" class="repo-name">
+                    <span>UIDAI-Hackathon</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge hackathon">Identity</span>
+                </div>
+                <div class="repo-desc">
+                  Next-generation identity verification, biometric anti-spoofing security pipeline and validation services.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Computer Vision</span>
+                  <span class="tag-pill">Microservices</span>
+                  <span class="tag-pill">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: Caralays -->
+            <div class="repo-card" data-category="realtime">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/Caralays" target="_blank" class="repo-name">
+                    <span>Caralays</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">Real-Time Core</span>
+                </div>
+                <div class="repo-desc">
+                  Mastery playground for high-concurrency WebSockets, Socket.IO, WebRTC, STUN/TURN, SDP/ICE and low-latency media mesh.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">WebRTC</span>
+                  <span class="tag-pill">WebSockets</span>
+                  <span class="tag-pill">Socket.IO</span>
+                  <span class="tag-pill">Media Mesh</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: TransitOps -->
+            <div class="repo-card" data-category="realtime">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/TransitOps" target="_blank" class="repo-name">
+                    <span>TransitOps</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">Mobility Systems</span>
+                </div>
+                <div class="repo-desc">
+                  End-to-end fleet and transport operations platform streamlining vehicle telemetry, dispatch, and predictive maintenance.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Telemetry</span>
+                  <span class="tag-pill">React</span>
+                  <span class="tag-pill">Node.js</span>
+                  <span class="tag-pill">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: Python-Playground -->
+            <div class="repo-card" data-category="sandbox">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/Python-Playground" target="_blank" class="repo-name">
+                    <span>Python-Playground</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">Sandbox</span>
+                </div>
+                <div class="repo-desc">
+                  Algorithmic logic, spatial heuristics, data structures &amp; performance-critical computational prototypes.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Python 3.11</span>
+                  <span class="tag-pill">NumPy</span>
+                  <span class="tag-pill">Algorithms</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: Javascript-Playground -->
+            <div class="repo-card" data-category="sandbox">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/Javascript-Playground" target="_blank" class="repo-name">
+                    <span>Javascript-Playground</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">Sandbox</span>
+                </div>
+                <div class="repo-desc">
+                  Asynchronous concurrency, event-loop microtasks, reactive UI state &amp; core computational logic.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">JavaScript</span>
+                  <span class="tag-pill">Event Loop</span>
+                  <span class="tag-pill">Async/Await</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card: Java-Playground -->
+            <div class="repo-card" data-category="sandbox">
+              <div class="repo-card-top">
+                <div class="repo-card-header">
+                  <a href="https://github.com/xnacro/Java-Playground" target="_blank" class="repo-name">
+                    <span>Java-Playground</span>
+                    <span style="font-size: 12px;">↗</span>
+                  </a>
+                  <span class="repo-badge">Sandbox</span>
+                </div>
+                <div class="repo-desc">
+                  Object-oriented systems, concurrent multithreading, and memory-safe design patterns.
+                </div>
+              </div>
+              <div class="repo-footer">
+                <div class="repo-tags">
+                  <span class="tag-pill">Java 21</span>
+                  <span class="tag-pill">Concurrency</span>
+                  <span class="tag-pill">OOP</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= 05 CONNECT SECTION ================= -->
+        <div align="center" style="margin-top: 40px;">
+          <img id="img-connect" src="./assets/connect.svg?v=2" alt="Connect with Prince Tiwari" />
           
           <div class="social-row">
             <a href="https://github.com/xnacro" target="_blank">
@@ -269,38 +1019,75 @@
               <img src="https://img.shields.io/badge/Email-Direct_Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
             </a>
           </div>
+
+          <div style="margin-top: 24px; font-size: 12px; color: #8b949e;">
+            &copy; 2026 Prince Tiwari (<strong>@xnacro</strong>) &bull; Built with precision as a unified engineering operating system.
+          </div>
         </div>
+
       </article>
     </div>
   </main>
 
+  <!-- =========================================================================
+       Interactive Scripts
+       ========================================================================= -->
   <script>
+    // Viewport Modes
     function setMode(mode) {
       const frame = document.getElementById('preview-frame');
-      const btnDesktop = document.getElementById('btn-desktop');
-      const btnNarrow = document.getElementById('btn-narrow');
-      const btnMobile = document.getElementById('btn-mobile');
-
-      btnDesktop.classList.remove('active');
-      btnNarrow.classList.remove('active');
-      btnMobile.classList.remove('active');
+      const buttons = document.querySelectorAll('.btn-group .btn');
+      buttons.forEach(b => b.classList.remove('active'));
 
       if (mode === 'desktop') {
         frame.style.maxWidth = '980px';
-        btnDesktop.classList.add('active');
+        document.getElementById('btn-desktop').classList.add('active');
       } else if (mode === 'narrow') {
         frame.style.maxWidth = '768px';
-        btnNarrow.classList.add('active');
+        document.getElementById('btn-narrow').classList.add('active');
       } else if (mode === 'mobile') {
         frame.style.maxWidth = '390px';
-        btnMobile.classList.add('active');
+        document.getElementById('btn-mobile').classList.add('active');
+      } else if (mode === 'fluid') {
+        frame.style.maxWidth = '100%';
+        document.getElementById('btn-fluid').classList.add('active');
       }
     }
 
+    // Theme Toggle
     function toggleTheme() {
       const current = document.body.getAttribute('data-theme');
       const next = current === 'dark' ? 'light' : 'dark';
       document.body.setAttribute('data-theme', next);
+    }
+
+    // Orbit Speed Control Simulation
+    function setOrbitSpeed(speed) {
+      document.querySelectorAll('.btn-speed').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      const stackImg = document.getElementById('img-stack');
+      // Append speed parameter to force reload with animation speed styling
+      stackImg.style.filter = `hue-rotate(${(speed - 1) * 30}deg)`;
+    }
+
+    // Repository Filter
+    function filterRepos(category) {
+      document.querySelectorAll('.repo-filter-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.repo-card');
+      cards.forEach(card => {
+        if (category === 'all') {
+          card.style.display = 'flex';
+        } else {
+          const cats = card.getAttribute('data-category').split(' ');
+          if (cats.includes(category)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
     }
   </script>
 </body>
