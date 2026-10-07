@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Tiwari (@xnacro) — GitHub Profile V2 Premium Experience Preview</title>
+  <title>Prince Tiwari (@xnacro) — GitHub Profile V3 Premium System Preview</title>
   
-  <!-- Modern Google Fonts -->
+  <!-- Exactly Two Font Families: Outfit (Display) & Plus Jakarta Sans (Clean Modern Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -22,14 +22,9 @@
       --gh-link: #58a6ff;
       --gh-btn-bg: #161b22;
       --gh-accent-blue: #2f86ff;
-      --gh-accent-cyan: #38bdf8;
-      --gh-accent-purple: #a855f7;
       --gh-accent-crimson: #ff3652;
-      --gh-accent-green: #10b981;
       --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      --font-subheading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
     }
 
     [data-theme="light"] {
@@ -97,34 +92,33 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: var(--gh-accent-green);
-      box-shadow: 0 0 10px var(--gh-accent-green);
-      animation: pulseLive 2s infinite;
+      background: var(--gh-accent-blue);
+      box-shadow: 0 0 10px rgba(47, 134, 255, 0.8);
+      animation: pulse 2s infinite;
     }
 
-    @keyframes pulseLive {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(0.85); opacity: 0.5; }
     }
 
-    .badge-v2 {
+    .badge-v3 {
       font-size: 11px;
       font-weight: 700;
       padding: 3px 10px;
-      border-radius: 14px;
+      border-radius: 20px;
       background: rgba(47, 134, 255, 0.15);
       border: 1px solid rgba(47, 134, 255, 0.4);
-      color: var(--gh-accent-cyan);
-      letter-spacing: 0.5px;
+      color: var(--gh-accent-blue);
+      letter-spacing: 0.8px;
     }
 
     .btn-group {
       display: flex;
-      align-items: center;
       gap: 6px;
-      background: var(--gh-btn-bg);
-      padding: 4px;
-      border-radius: 10px;
+      background: rgba(22, 27, 34, 0.8);
+      padding: 3px;
+      border-radius: 8px;
       border: 1px solid var(--gh-border);
     }
 
@@ -132,139 +126,150 @@
       background: transparent;
       border: none;
       color: var(--gh-text-muted);
-      font-family: var(--font-sans);
+      padding: 6px 13px;
+      border-radius: 6px;
       font-size: 12px;
       font-weight: 600;
-      padding: 6px 14px;
-      border-radius: 6px;
+      font-family: var(--font-sans);
       cursor: pointer;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.2s ease;
       display: flex;
       align-items: center;
       gap: 6px;
     }
 
-    .btn:hover { color: #f0f6fc; background: rgba(255, 255, 255, 0.08); }
-    .btn.active { color: #ffffff; background: #238636; box-shadow: 0 2px 8px rgba(35, 134, 54, 0.4); }
+    .btn:hover {
+      color: var(--gh-heading);
+      background: rgba(255, 255, 255, 0.06);
+    }
 
-    /* Main Viewport Container */
+    .btn.active {
+      color: #ffffff;
+      background: var(--gh-accent-blue);
+      box-shadow: 0 2px 6px rgba(47, 134, 255, 0.35);
+    }
+
+    /* GitHub Profile Viewport Frame */
     .viewport-wrapper {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding: 32px 16px 100px;
+      padding: 24px 16px 80px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .github-frame {
       width: 100%;
       max-width: 980px;
-      background: var(--gh-bg);
+      background-color: var(--gh-bg);
       border: 1px solid var(--gh-border);
-      border-radius: 16px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 24px 56px rgba(0, 0, 0, 0.45);
       transition: max-width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .github-header {
-      padding: 14px 24px;
-      background: rgba(22, 27, 34, 0.75);
+      background-color: rgba(22, 27, 34, 0.8);
       border-bottom: 1px solid var(--gh-border);
+      padding: 12px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      font-size: 13px;
+      font-size: 12.5px;
+      color: var(--gh-text-muted);
     }
 
     .github-breadcrumbs {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-weight: 600;
-      color: var(--gh-heading);
     }
 
     .github-breadcrumbs a {
       color: var(--gh-link);
       text-decoration: none;
+      font-weight: 600;
     }
-    .github-breadcrumbs a:hover { text-decoration: underline; }
 
-    /* Markdown Article Body */
     .markdown-body {
-      padding: 36px 30px;
-      background: var(--gh-bg);
+      padding: 32px 36px 48px;
+      background-color: var(--gh-bg);
     }
 
     .markdown-body img {
       max-width: 100%;
       height: auto;
       display: block;
-      margin: 18px auto;
-      border-radius: 14px;
-      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
-      transition: transform 0.25s ease;
-    }
-    .markdown-body img:hover {
-      transform: translateY(-2px);
+      margin-bottom: 24px;
+      border-radius: 12px;
     }
 
+    /* Project Table */
     .project-table-container {
       width: 100%;
       overflow-x: auto;
-      margin: 24px 0;
+      margin: 28px 0;
+      border: 1px solid var(--gh-border);
+      border-radius: 10px;
+      background: rgba(13, 17, 23, 0.5);
     }
 
     .project-table {
       width: 100%;
       border-collapse: collapse;
       font-size: 13px;
-    }
-
-    .project-table th, .project-table td {
-      padding: 12px 16px;
-      border: 1px solid var(--gh-border);
       text-align: left;
     }
 
     .project-table th {
-      background: rgba(22, 27, 34, 0.85);
+      background-color: rgba(22, 27, 34, 0.9);
       color: var(--gh-heading);
-      font-family: var(--font-subheading);
-      font-size: 11px;
+      padding: 12px 16px;
       font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
+      border-bottom: 1px solid var(--gh-border);
+      font-family: var(--font-sans);
     }
 
     .project-table td {
-      background: rgba(13, 17, 23, 0.5);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--gh-border-subtle);
       color: var(--gh-text);
+      font-family: var(--font-sans);
+    }
+
+    .project-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .project-table tr:hover {
+      background-color: rgba(255, 255, 255, 0.02);
     }
 
     .project-table a {
       color: var(--gh-link);
-      font-weight: 700;
       text-decoration: none;
+      font-weight: 700;
     }
-    .project-table a:hover { text-decoration: underline; }
 
-    /* Lab & Sandboxes Card */
+    /* Lab repos section */
     .lab-container {
-      background: rgba(13, 21, 37, 0.6);
-      border: 1px solid var(--gh-border);
-      border-radius: 12px;
-      padding: 20px 24px;
       margin: 28px 0;
+      padding: 22px 24px;
+      border: 1px solid var(--gh-border);
+      border-radius: 10px;
+      background: rgba(13, 17, 23, 0.6);
     }
 
     .lab-title {
       font-family: var(--font-display);
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 800;
       color: var(--gh-heading);
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .lab-list {
@@ -280,23 +285,15 @@
       font-weight: 700;
       text-decoration: none;
     }
-    .lab-list li a:hover { text-decoration: underline; }
 
-    /* Social Row */
     .social-row {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 24px;
+      margin-top: 20px;
     }
 
-    .social-row img {
-      margin: 0;
-      box-shadow: none;
-    }
-
-    /* Responsive adjustments */
     @media (max-width: 768px) {
       .toolbar { padding: 10px 16px; }
       .markdown-body { padding: 22px 16px; }
@@ -313,9 +310,9 @@
     <div class="toolbar-left">
       <div class="toolbar-brand">
         <div class="dot-live"></div>
-        <span>PRINCE TIWARI // GITHUB PROFILE V2</span>
+        <span>PRINCE TIWARI // GITHUB PROFILE V3</span>
       </div>
-      <span class="badge-v2">VERIFIED RECOGNITION &bull; SPATIAL AI</span>
+      <span class="badge-v3">FINAL POLISH &bull; PREMIUM SYSTEM</span>
     </div>
 
     <!-- Responsive Device Switcher -->
@@ -352,7 +349,7 @@
           <a href="https://github.com/xnacro">xnacro</a> / <strong>xnacro</strong> (README.md)
         </div>
         <div>
-          <span style="font-size: 11px; padding: 2px 10px; border-radius: 12px; background: rgba(56, 189, 253, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 253, 0.4); font-weight: 700;">
+          <span style="font-size: 11px; padding: 2px 10px; border-radius: 12px; background: rgba(47, 134, 255, 0.15); color: #2f86ff; border: 1px solid rgba(47, 134, 255, 0.4); font-weight: 700;">
             Special Profile Repository
           </span>
         </div>
@@ -364,30 +361,35 @@
         <!-- 01 HERO SECTION -->
         <div align="center">
           <a href="https://github.com/xnacro">
-            <img id="img-hero" src="./assets/hero.svg?v=3" alt="Prince Tiwari — Software Engineer &amp; Builder" />
+            <img id="img-hero" src="./assets/hero.svg?v=4" alt="Prince Tiwari — Software Engineer &amp; Builder" />
           </a>
 
           <br/>
 
           <!-- 02 RECOGNITION (PLACED HIGH!) -->
-          <img id="img-achievements" src="./assets/achievements.svg?v=3" alt="01 // Verified Recognition — Cognithon 2nd, India Innovates Finalist, Flipkart GRiD Semi-Finalist, Surakshaai.org" />
+          <img id="img-achievements" src="./assets/achievements.svg?v=4" alt="02 // Verified Recognition — Cognithon 2nd, India Innovates Finalist, Flipkart GRiD Semi-Finalist, Surakshaai.org" />
 
           <br/>
 
           <!-- 03 NOW BUILDING -->
-          <img id="img-current" src="./assets/current-build.svg?v=3" alt="02 // Now Building — SurakshaAI Platform Sprint" />
+          <img id="img-current" src="./assets/current-build.svg?v=4" alt="03 // Now Building — SurakshaAI Platform Sprint" />
 
           <br/>
 
-          <!-- 04 FLAGSHIP PROJECT (SURAKSHAAI) -->
+          <!-- 04 FLAGSHIP SYSTEM (SURAKSHAAI) -->
           <a href="https://github.com/xnacro/SurakshaAI">
-            <img id="img-flagship" src="./assets/flagship.svg?v=3" alt="03 // Flagship System — SurakshaAI Real-Time Safety Intelligence Platform" />
+            <img id="img-flagship" src="./assets/flagship.svg?v=4" alt="04 // Flagship System — SurakshaAI Real-Time Safety Intelligence Platform" />
           </a>
 
           <br/>
 
-          <!-- 05 SELECTED BUILDS -->
-          <img id="img-builds" src="./assets/selected-builds.svg?v=3" alt="04 // Selected Builds — RESQ, GridShare, MednormAI, OpenRAG" />
+          <!-- 05 THE ENGINE ROOM (ORBITAL SYSTEM & FULL TECH STACK) -->
+          <img id="img-stack" src="./assets/stack.svg?v=4" alt="05 // The Engine Room — Planetary Orbital System &amp; Verified Toolchain" />
+
+          <br/>
+
+          <!-- 06 SELECTED BUILDS -->
+          <img id="img-builds" src="./assets/selected-builds.svg?v=4" alt="06 // Selected Builds — RESQ, GridShare, MednormAI, OpenRAG" />
         </div>
 
         <!-- QUICK DIRECTORY // SELECTED BUILDS REPOSITORY LINKS -->
@@ -452,18 +454,13 @@
         </div>
 
         <div align="center">
-          <!-- 06 ENGINE ROOM & PLANETARY CORE -->
-          <img id="img-stack" src="./assets/stack.svg?v=3" alt="05 // The Engine Room — Planetary Orbital System &amp; Verified Toolchain" />
-
-          <br/>
-
           <!-- 07 BUILDER ID & TIMELINE -->
-          <img id="img-dashboard" src="./assets/id-dashboard.svg?v=3" alt="06 // Builder ID Specification Pass &amp; Chronological Engineering Journey" />
+          <img id="img-dashboard" src="./assets/id-dashboard.svg?v=4" alt="07 // Builder ID Specification Pass &amp; Chronological Milestones" />
 
           <br/>
 
           <!-- 08 CONNECT -->
-          <img id="img-connect" src="./assets/connect.svg?v=3" alt="07 // Initiate Transmission — Let's Build Something" />
+          <img id="img-connect" src="./assets/connect.svg?v=4" alt="08 // Transmission — Let's Build Something" />
 
           <br/>
 
@@ -536,7 +533,6 @@
         dashImg.style.filter = 'none';
       } else {
         btn.textContent = '⏸️ Animation: OFF (Static)';
-        // Simulation of static view
         stackImg.style.filter = 'contrast(1.05)';
         dashImg.style.filter = 'contrast(1.05)';
       }

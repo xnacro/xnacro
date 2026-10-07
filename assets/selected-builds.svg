@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 520" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 680" width="100%" height="100%">
   <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+</style>
     <linearGradient id="sb-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.6"/>
       <stop offset="50%" stop-color="#FF3652" stop-opacity="0.3"/>
@@ -8,130 +13,164 @@
     <pattern id="sb-dots" width="20" height="20" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1" fill="#1C2B49" opacity="0.4"/>
     </pattern>
+    <linearGradient id="danger-poly" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3652" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.05"/>
+    </linearGradient>
   </defs>
 
-  <rect x="0" y="0" width="940" height="520" rx="16" fill="#070B16" stroke="url(#sb-border)" stroke-width="1.3"/>
-  <rect x="0" y="0" width="940" height="520" rx="16" fill="url(#sb-dots)"/>
+  <rect x="0" y="0" width="940" height="680" rx="16" fill="#070B16" stroke="url(#sb-border)" stroke-width="1.3"/>
+  <rect x="0" y="0" width="940" height="680" rx="16" fill="url(#sb-dots)"/>
 
   <!-- Top bar -->
-  <g transform="translate(32, 24)">
-    <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="2" fill="#2F86FF">04 // SELECTED BUILDS • RECENT SYSTEMS</text>
-    <text x="0" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">PRODUCTION SYSTEMS &amp; COMPETITIVE WORK<tspan fill="#FF3652">.</tspan></text>
-    <text x="560" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" fill="#8B96A8">Presented as engineered architectures, not raw tables.</text>
+  <g transform="translate(32, 22)">
+    <text x="0" y="10" class="font-sans" font-size="10.5" font-weight="700" letter-spacing="2" fill="#2F86FF">06 // SELECTED BUILDS</text>
+    <text x="0" y="34" class="font-display" font-size="22" font-weight="900" fill="#FFFFFF">ENGINEERED SYSTEMS<tspan fill="#FF3652">.</tspan></text>
+    <text x="560" y="32" class="font-sans" font-size="11.5" fill="#8B96A8">High-impact projects with verified architectural depth.</text>
   </g>
 
   <!-- 4 Alternating Project Modules -->
-  <g transform="translate(32, 78)">
+  <g transform="translate(32, 70)">
 
-    <!-- BUILD 01: RESQ -->
+    <!-- ================= BUILD 01: RESQ (Content Left, Technical Visual Right) ================= -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="425" height="195" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-      <text x="18" y="24" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" letter-spacing="1" fill="#2F86FF">BUILD // 01 • INDIA INNOVATES</text>
-      
-      <text x="18" y="52" font-family="-apple-system, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">RESQ</text>
-      <text x="75" y="52" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#8B96A8">• Disaster Relief Routing Engine</text>
+      <rect x="0" y="0" width="876" height="150" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+      <!-- Content Left -->
+      <g transform="translate(24, 18)">
+        <text x="0" y="10" class="font-sans" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#60A5FA">01 // ROUTING &amp; DISASTER INTELLIGENCE</text>
+        <text x="0" y="32" class="font-display" font-size="20" font-weight="900" fill="#FFFFFF">RESQ</text>
+        <text x="0" y="48" class="font-sans" font-size="11.5" font-weight="700" fill="#2F86FF">Disaster Relief Routing Engine</text>
 
-      <text x="18" y="78" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        Damage-aware supply chain routing across natural disaster zones,
-      </text>
-      <text x="18" y="96" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        assessing road risk surfaces via Valhalla dynamic cost-weighted routing.
-      </text>
+        <text x="0" y="72" class="font-sans" font-size="12" fill="#CBD5E1">
+          Damage-aware supply chain routing across natural disaster zones, assessing road risk
+        </text>
+        <text x="0" y="88" class="font-sans" font-size="12" fill="#CBD5E1">
+          surfaces via Valhalla dynamic cost-weighted routing &amp; PostGIS hazard geometries.
+        </text>
 
-      <g transform="translate(18, 116)">
-        <text x="0" y="10" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#8B96A8">STACK:</text>
-        <rect x="45" y="-3" width="95" height="18" rx="3" fill="#12203A"/><text x="53" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">PostGIS Grids</text>
-        <rect x="148" y="-3" width="75" height="18" rx="3" fill="#12203A"/><text x="156" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">Valhalla</text>
-        <rect x="230" y="-3" width="65" height="18" rx="3" fill="#12203A"/><text x="238" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">Python</text>
+        <g transform="translate(0, 108)">
+          <text x="0" y="10" class="font-sans" font-size="10.5" font-weight="700" fill="#8B96A8">STACK: <tspan fill="#60A5FA">PostGIS • Valhalla Routing • Python • GeoJSON</tspan></text>
+          <text x="380" y="10" class="font-sans" font-size="10.5" font-weight="700" fill="#FF8A9A">NATIONAL FINALIST</text>
+        </g>
       </g>
 
-      <g transform="translate(18, 154)">
-        <text x="0" y="14" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#8B96A8">SCALE: 408k cell hazard surface in PostGIS</text>
-        <text x="270" y="14" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#2F86FF">VIEW REPO →</text>
-      </g>
-    </g>
-
-    <!-- BUILD 02: GridShare -->
-    <g transform="translate(450, 0)">
-      <rect x="0" y="0" width="425" height="195" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-      <text x="18" y="24" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" letter-spacing="1" fill="#FF3652">BUILD // 02 • IIT GUWAHATI</text>
-      
-      <text x="18" y="52" font-family="-apple-system, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">GridShare</text>
-      <text x="120" y="52" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#8B96A8">• Community Microgrid</text>
-
-      <text x="18" y="78" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        Intelligent coordination layer for neighborhood solar, battery &amp;
-      </text>
-      <text x="18" y="96" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        EV storage, optimizing decentralized P2P energy balancing in real time.
-      </text>
-
-      <g transform="translate(18, 116)">
-        <text x="0" y="10" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#8B96A8">STACK:</text>
-        <rect x="45" y="-3" width="75" height="18" rx="3" fill="#12203A"/><text x="53" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">Distributed</text>
-        <rect x="128" y="-3" width="60" height="18" rx="3" fill="#12203A"/><text x="136" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">Node.js</text>
-        <rect x="195" y="-3" width="55" height="18" rx="3" fill="#12203A"/><text x="203" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">React</text>
-      </g>
-
-      <g transform="translate(18, 154)">
-        <text x="0" y="14" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#8B96A8">FLAGSHIP HACKATHON BUILD</text>
-        <text x="270" y="14" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#FF3652">VIEW REPO →</text>
+      <!-- Technical Visual Right: Dynamic Hazard Bypass Diagram -->
+      <g transform="translate(580, 15)">
+        <rect x="0" y="0" width="276" height="120" rx="8" fill="#070E1A" stroke="#162544" stroke-width="1"/>
+        <!-- Hazard Polygon -->
+        <polygon points="70,25 150,15 190,65 120,95 60,60" fill="url(#danger-poly)" stroke="#FF3652" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="110" y="55" class="font-sans" font-size="9" font-weight="700" fill="#FF8A9A" text-anchor="middle">FLOOD / HAZARD ZONE</text>
+        <!-- Rerouted Path (Cost-weighted bypass) -->
+        <path d="M 25 100 Q 40 40 70 20 T 150 15 T 220 30 T 255 75" fill="none" stroke="#2F86FF" stroke-width="2.5"/>
+        <circle cx="25" cy="100" r="4.5" fill="#2F86FF"/>
+        <text x="25" y="114" class="font-sans" font-size="8" font-weight="700" fill="#8B96A8" text-anchor="middle">ORIGIN</text>
+        <circle cx="255" cy="75" r="4.5" fill="#10B981"/>
+        <text x="255" y="90" class="font-sans" font-size="8" font-weight="700" fill="#10B981" text-anchor="middle">RELIEF HUB</text>
       </g>
     </g>
 
-    <!-- BUILD 03: MednormAI -->
-    <g transform="translate(0, 215)">
-      <rect x="0" y="0" width="425" height="195" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-      <text x="18" y="24" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" letter-spacing="1" fill="#A855F7">BUILD // 03 • IIT PATNA × JILO HEALTH</text>
-      
-      <text x="18" y="52" font-family="-apple-system, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">MednormAI</text>
-      <text x="145" y="52" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#8B96A8">• Clinical Data Engine</text>
-
-      <text x="18" y="78" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        AI-powered data normalization pipeline using OCR &amp; NLP to parse
-      </text>
-      <text x="18" y="96" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        unstructured medical PDFs and lab bills into structured health data.
-      </text>
-
-      <g transform="translate(18, 116)">
-        <text x="0" y="10" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#8B96A8">STACK:</text>
-        <rect x="45" y="-3" width="70" height="18" rx="3" fill="#241634"/><text x="53" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#D8B4FE">OCR • NLP</text>
-        <rect x="122" y="-3" width="60" height="18" rx="3" fill="#12203A"/><text x="130" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">Python</text>
-        <rect x="189" y="-3" width="75" height="18" rx="3" fill="#12203A"/><text x="197" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">FastAPI</text>
+    <!-- ================= BUILD 02: GridShare (Visual Left, Content Right) ================= -->
+    <g transform="translate(0, 165)">
+      <rect x="0" y="0" width="876" height="150" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+      <!-- Technical Visual Left: Microgrid P2P Power Flow Diagram -->
+      <g transform="translate(20, 15)">
+        <rect x="0" y="0" width="276" height="120" rx="8" fill="#070E1A" stroke="#162544" stroke-width="1"/>
+        <!-- Node 1: Solar -->
+        <circle cx="50" cy="40" r="16" fill="#1F1D0E" stroke="#EAB308" stroke-width="1.2"/>
+        <text x="50" y="44" class="font-sans" font-size="8.5" font-weight="800" fill="#FDE047" text-anchor="middle">SOLAR</text>
+        <!-- Node 2: Battery ESS -->
+        <circle cx="140" cy="85" r="18" fill="#0E1D2A" stroke="#2F86FF" stroke-width="1.4"/>
+        <text x="140" y="88" class="font-sans" font-size="8.5" font-weight="800" fill="#60A5FA" text-anchor="middle">STORAGE</text>
+        <!-- Node 3: EV / Home Load -->
+        <circle cx="225" cy="40" r="16" fill="#1E0E1B" stroke="#FF3652" stroke-width="1.2"/>
+        <text x="225" y="44" class="font-sans" font-size="8.5" font-weight="800" fill="#FFA3AF" text-anchor="middle">EV LOAD</text>
+        <!-- Interconnection Energy Flow -->
+        <line x1="65" y1="48" x2="124" y2="78" stroke="#60A5FA" stroke-width="1.8" stroke-dasharray="4,3"/>
+        <line x1="156" y1="78" x2="210" y2="48" stroke="#FF3652" stroke-width="1.8" stroke-dasharray="4,3"/>
+        <text x="140" y="24" class="font-sans" font-size="8" font-weight="700" fill="#8B96A8" text-anchor="middle">P2P BALANCING PROTOCOL</text>
       </g>
 
-      <g transform="translate(18, 154)">
-        <text x="0" y="14" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#8B96A8">TRACK 2 HACKMATRIX 2.0</text>
-        <text x="270" y="14" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#A855F7">VIEW REPO →</text>
+      <!-- Content Right -->
+      <g transform="translate(320, 18)">
+        <text x="0" y="10" class="font-sans" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#FF8A9A">02 // DISTRIBUTED ENERGY &amp; P2P TRADING</text>
+        <text x="0" y="32" class="font-display" font-size="20" font-weight="900" fill="#FFFFFF">GridShare</text>
+        <text x="0" y="48" class="font-sans" font-size="11.5" font-weight="700" fill="#FF3652">Community Microgrid Coordinator</text>
+
+        <text x="0" y="72" class="font-sans" font-size="12" fill="#CBD5E1">
+          Intelligent coordination layer for neighborhood solar, battery &amp; EV storage, optimizing
+        </text>
+        <text x="0" y="88" class="font-sans" font-size="12" fill="#CBD5E1">
+          decentralized peer-to-peer energy balancing and consumption peaks in real time.
+        </text>
+
+        <g transform="translate(0, 108)">
+          <text x="0" y="10" class="font-sans" font-size="10.5" font-weight="700" fill="#8B96A8">STACK: <tspan fill="#60A5FA">Distributed Node.js • React • Telemetry Streaming</tspan></text>
+          <text x="370" y="10" class="font-sans" font-size="10.5" font-weight="700" fill="#60A5FA">IIT GUWAHATI FLAGSHIP</text>
+        </g>
       </g>
     </g>
 
-    <!-- BUILD 04: OpenRAG -->
-    <g transform="translate(450, 215)">
-      <rect x="0" y="0" width="425" height="195" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-      <text x="18" y="24" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" letter-spacing="1" fill="#10B981">BUILD // 04 • AI PIPELINE</text>
-      
-      <text x="18" y="52" font-family="-apple-system, sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">OpenRAG</text>
-      <text x="115" y="52" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#8B96A8">• Enterprise RAG System</text>
+    <!-- ================= BUILD 03: MednormAI (Content Left, Visual Right) ================= -->
+    <g transform="translate(0, 330)">
+      <rect x="0" y="0" width="876" height="150" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+      <!-- Content Left -->
+      <g transform="translate(24, 18)">
+        <text x="0" y="10" class="font-sans" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#60A5FA">03 // CLINICAL DATA EXTRACTION &amp; NLP</text>
+        <text x="0" y="32" class="font-display" font-size="20" font-weight="900" fill="#FFFFFF">MednormAI</text>
+        <text x="0" y="48" class="font-sans" font-size="11.5" font-weight="700" fill="#2F86FF">Clinical Data Normalization Engine</text>
 
-      <text x="18" y="78" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        End-to-end Retrieval-Augmented Generation pipeline with dense
-      </text>
-      <text x="18" y="96" font-family="-apple-system, sans-serif" font-size="12.5" fill="#CBD5E1">
-        document embeddings, vector indexing &amp; semantic hybrid retrieval.
-      </text>
+        <text x="0" y="72" class="font-sans" font-size="12" fill="#CBD5E1">
+          AI data normalization pipeline using optical character recognition &amp; NLP pipelines
+        </text>
+        <text x="0" y="88" class="font-sans" font-size="12" fill="#CBD5E1">
+          to parse unstructured clinical PDFs and medical bills into normalized records.
+        </text>
 
-      <g transform="translate(18, 116)">
-        <text x="0" y="10" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#8B96A8">STACK:</text>
-        <rect x="45" y="-3" width="60" height="18" rx="3" fill="#12203A"/><text x="53" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">PyTorch</text>
-        <rect x="112" y="-3" width="75" height="18" rx="3" fill="#12203A"/><text x="120" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">Vector DB</text>
-        <rect x="194" y="-3" width="75" height="18" rx="3" fill="#12203A"/><text x="202" y="10" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">LangChain</text>
+        <g transform="translate(0, 108)">
+          <text x="0" y="10" class="font-sans" font-size="10.5" font-weight="700" fill="#8B96A8">STACK: <tspan fill="#60A5FA">OCR Pipeline • NLP • Python • FastAPI • Regex Heuristics</tspan></text>
+          <text x="380" y="10" class="font-sans" font-size="10.5" font-weight="700" fill="#8B96A8">HACKMATRIX 2.0</text>
+        </g>
       </g>
 
-      <g transform="translate(18, 154)">
-        <text x="0" y="14" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#8B96A8">SEMANTIC RETRIEVAL PIPELINE</text>
-        <text x="270" y="14" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#10B981">VIEW REPO →</text>
+      <!-- Technical Visual Right: Document Parsing Flow -->
+      <g transform="translate(580, 15)">
+        <rect x="0" y="0" width="276" height="120" rx="8" fill="#070E1A" stroke="#162544" stroke-width="1"/>
+        <!-- Step 1: Raw Medical PDF -->
+        <rect x="20" y="25" width="55" height="70" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+        <line x1="28" y1="38" x2="65" y2="38" stroke="#64748B" stroke-width="1.5"/>
+        <line x1="28" y1="48" x2="58" y2="48" stroke="#64748B" stroke-width="1.5"/>
+        <line x1="28" y1="58" x2="62" y2="58" stroke="#64748B" stroke-width="1.5"/>
+        <text x="47" y="85" class="font-sans" font-size="7.5" font-weight="700" fill="#94A3B8" text-anchor="middle">RAW PDF</text>
+        <!-- Arrow -->
+        <path d="M 85 60 L 115 60" stroke="#2F86FF" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <!-- Step 2: NLP Parser -->
+        <rect x="125" y="35" width="50" height="50" rx="6" fill="#12203A" stroke="#2F86FF" stroke-width="1.2"/>
+        <text x="150" y="58" class="font-sans" font-size="8.5" font-weight="800" fill="#60A5FA" text-anchor="middle">OCR + NLP</text>
+        <text x="150" y="70" class="font-sans" font-size="7.5" fill="#8B96A8" text-anchor="middle">MODEL</text>
+        <!-- Arrow -->
+        <path d="M 185 60 L 205 60" stroke="#2F86FF" stroke-width="1.5"/>
+        <!-- Step 3: Structured JSON Tree -->
+        <rect x="215" y="25" width="45" height="70" rx="4" fill="#0F241F" stroke="#10B981" stroke-width="1"/>
+        <text x="237" y="52" class="font-sans" font-size="8" font-weight="800" fill="#34D399" text-anchor="middle">{ JSON }</text>
+        <text x="237" y="80" class="font-sans" font-size="7" fill="#6EE7B7" text-anchor="middle">CLEAN</text>
+      </g>
+    </g>
+
+    <!-- ================= BUILD 04: OpenRAG (Compact Horizontal Full-Width Bar) ================= -->
+    <g transform="translate(0, 495)">
+      <rect x="0" y="0" width="876" height="75" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+      <g transform="translate(24, 18)">
+        <!-- Left: Index + Title -->
+        <text x="0" y="10" class="font-sans" font-size="9" font-weight="700" letter-spacing="1.5" fill="#60A5FA">04 // SEMANTIC RETRIEVAL</text>
+        <text x="0" y="32" class="font-display" font-size="18" font-weight="900" fill="#FFFFFF">OpenRAG</text>
+        <text x="100" y="32" class="font-sans" font-size="12" font-weight="700" fill="#60A5FA">• Enterprise RAG Pipeline</text>
+
+        <!-- Middle: Description -->
+        <text x="320" y="18" class="font-sans" font-size="11.5" fill="#CBD5E1">Dense document embeddings, vector indexing &amp; semantic hybrid search.</text>
+        <text x="320" y="34" class="font-sans" font-size="10" font-weight="700" fill="#8B96A8">STACK: <tspan fill="#60A5FA">PyTorch • Transformers • Vector DB • LangChain</tspan></text>
+
+        <!-- Right: CTA Link -->
+        <text x="825" y="28" class="font-sans" font-size="11" font-weight="800" fill="#2F86FF" text-anchor="end">VIEW REPOSITORY →</text>
       </g>
     </g>
 

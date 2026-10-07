@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 210" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 190" width="100%" height="100%">
   <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+</style>
     <linearGradient id="cb-border" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#2F86FF" stop-opacity="0.15"/>
@@ -9,44 +14,39 @@
     </pattern>
   </defs>
 
-  <rect x="0" y="0" width="940" height="210" rx="14" fill="#070B16" stroke="url(#cb-border)" stroke-width="1.2"/>
-  <rect x="0" y="0" width="940" height="210" rx="14" fill="url(#cb-grid)"/>
+  <rect x="0" y="0" width="940" height="190" rx="14" fill="#070B16" stroke="url(#cb-border)" stroke-width="1.2"/>
+  <rect x="0" y="0" width="940" height="190" rx="14" fill="url(#cb-grid)"/>
 
   <!-- Top bar -->
-  <g transform="translate(30, 22)">
-    <circle cx="5" cy="5" r="4" fill="#10B981"/>
-    <text x="16" y="9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" letter-spacing="1.8" fill="#2F86FF">02 // NOW BUILDING • ACTIVE FOCUS</text>
-    <rect x="800" y="-3" width="95" height="20" rx="4" fill="#12203A"/>
-    <text x="812" y="11" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="800" fill="#22C55E">ACTIVE SHIP</text>
+  <g transform="translate(30, 20)">
+    <circle cx="5" cy="5" r="4" fill="#2F86FF"/>
+    <text x="16" y="9" class="font-sans" font-size="11" font-weight="700" letter-spacing="1.8" fill="#2F86FF">03 // NOW BUILDING</text>
   </g>
 
   <!-- Left Column Card: SurakshaAI Focus -->
-  <g transform="translate(30, 56)">
-    <rect x="0" y="0" width="425" height="132" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-    <text x="20" y="26" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" letter-spacing="1" fill="#8B96A8">CURRENT PRODUCT FOCUS</text>
-    <text x="20" y="52" font-family="-apple-system, sans-serif" font-size="19" font-weight="900" fill="#FFFFFF">SurakshaAI <tspan fill="#60A5FA" font-size="14" font-weight="700">• surakshaai.org</tspan></text>
-    <text x="20" y="74" font-family="-apple-system, sans-serif" font-size="12.5" fill="#8B96A8">Turning real-world risk telemetry and street safety datasets into</text>
-    <text x="20" y="92" font-family="-apple-system, sans-serif" font-size="12.5" fill="#8B96A8">actionable intelligence through the Dynamic Safety Index (DSI).</text>
-    <g transform="translate(20, 104)">
-      <rect x="0" y="0" width="85" height="18" rx="3" fill="#122442"/>
-      <text x="8" y="13" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">SPATIAL AI</text>
-      <rect x="95" y="0" width="105" height="18" rx="3" fill="#122442"/>
-      <text x="103" y="13" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">MICROSERVICES</text>
+  <g transform="translate(30, 48)">
+    <rect x="0" y="0" width="425" height="122" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="20" y="24" class="font-sans" font-size="10" font-weight="700" letter-spacing="1" fill="#8B96A8">CURRENT PRODUCT FOCUS</text>
+    <text x="20" y="48" class="font-display" font-size="18" font-weight="900" fill="#FFFFFF">SurakshaAI <tspan fill="#60A5FA" font-size="13" font-weight="700">• surakshaai.org</tspan></text>
+    <text x="20" y="70" class="font-sans" font-size="12" fill="#8B96A8">Turning real-world risk telemetry and street safety datasets into</text>
+    <text x="20" y="88" class="font-sans" font-size="12" fill="#8B96A8">predictive intelligence through the Dynamic Safety Index (DSI).</text>
+    <g transform="translate(20, 96)">
+      <text x="0" y="12" class="font-sans" font-size="10" font-weight="700" fill="#60A5FA">SPATIAL AI  •  MICROSERVICES  •  GEOGRAPHIC RISK</text>
     </g>
   </g>
 
   <!-- Right Column Card: Current Technical Sprint -->
-  <g transform="translate(475, 56)">
-    <rect x="0" y="0" width="435" height="132" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-    <text x="20" y="26" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" letter-spacing="1" fill="#8B96A8">TECHNICAL CAPABILITY SPRINT</text>
+  <g transform="translate(475, 48)">
+    <rect x="0" y="0" width="435" height="122" rx="10" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="20" y="24" class="font-sans" font-size="10" font-weight="700" letter-spacing="1" fill="#8B96A8">ACTIVE SPRINT</text>
     
-    <text x="20" y="54" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">Spatial AI Models:</text>
-    <text x="145" y="54" font-family="-apple-system, sans-serif" font-size="13" fill="#8B96A8">Dynamic Safety Index, multi-tier hazard heatmaps</text>
+    <text x="20" y="50" class="font-sans" font-size="12.5" font-weight="700" fill="#F5F7FA">Spatial AI Models:</text>
+    <text x="140" y="50" class="font-sans" font-size="12" fill="#8B96A8">Dynamic Safety Index &amp; multi-tier risk heatmaps</text>
 
-    <text x="20" y="80" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">Architecture:</text>
-    <text x="145" y="80" font-family="-apple-system, sans-serif" font-size="13" fill="#8B96A8">Node.js orchestrator + decoupled FastAPI ML inference</text>
+    <text x="20" y="74" class="font-sans" font-size="12.5" font-weight="700" fill="#F5F7FA">Architecture:</text>
+    <text x="140" y="74" class="font-sans" font-size="12" fill="#8B96A8">Node.js orchestrator + decoupled FastAPI ML inference</text>
 
-    <text x="20" y="106" font-family="-apple-system, sans-serif" font-size="13" font-weight="800" fill="#F5F7FA">Availability:</text>
-    <text x="145" y="106" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" fill="#22C55E">Open for AI/ML &amp; Full-Stack engineering teams</text>
+    <text x="20" y="98" class="font-sans" font-size="12.5" font-weight="700" fill="#F5F7FA">Focus:</text>
+    <text x="140" y="98" class="font-sans" font-size="12" fill="#60A5FA">Product engineering &amp; high-concurrency systems</text>
   </g>
 </svg>

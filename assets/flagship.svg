@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 370" width="100%" height="100%">
   <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+</style>
     <linearGradient id="fl-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.85"/>
       <stop offset="50%" stop-color="#0A1224" stop-opacity="0.3"/>
@@ -10,100 +15,62 @@
     </pattern>
   </defs>
 
-  <rect x="0" y="0" width="940" height="440" rx="16" fill="#070B16" stroke="url(#fl-border)" stroke-width="1.5"/>
-  <rect x="0" y="0" width="940" height="440" rx="16" fill="url(#fl-grid)"/>
+  <rect x="0" y="0" width="940" height="370" rx="16" fill="#070B16" stroke="url(#fl-border)" stroke-width="1.5"/>
+  <rect x="0" y="0" width="940" height="370" rx="16" fill="url(#fl-grid)"/>
 
   <!-- Top Badges -->
-  <g transform="translate(32, 26)">
-    <rect x="0" y="0" width="175" height="22" rx="4" fill="#14284D" stroke="#2F86FF" stroke-width="0.8"/>
-    <text x="12" y="15" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#60A5FA">03 // FLAGSHIP SYSTEM</text>
+  <g transform="translate(32, 24)">
+    <rect x="0" y="0" width="170" height="22" rx="4" fill="#14284D" stroke="#2F86FF" stroke-width="0.8"/>
+    <text x="12" y="15" class="font-sans" font-size="10" font-weight="700" fill="#60A5FA">04 // FLAGSHIP SYSTEM</text>
 
-    <rect x="188" y="0" width="160" height="22" rx="4" fill="#2B1424" stroke="#FF3652" stroke-width="0.8"/>
-    <text x="198" y="15" font-family="-apple-system, sans-serif" font-size="10" font-weight="800" fill="#FF8A9A">SPATIAL AI PLATFORM</text>
-
-    <text x="876" y="16" text-anchor="end" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#8B96A8">STATUS: ACTIVE PRODUCTION</text>
+    <rect x="182" y="0" width="160" height="22" rx="4" fill="#2B1424" stroke="#FF3652" stroke-width="0.8"/>
+    <text x="192" y="15" class="font-sans" font-size="10" font-weight="700" fill="#FF8A9A">SPATIAL AI PLATFORM</text>
   </g>
 
-  <!-- Title & Real Value Proposition -->
-  <g transform="translate(32, 75)">
-    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="900" fill="#FFFFFF">SurakshaAI</text>
-    <text x="170" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="600" fill="#8B96A8">• Real-Time Safety Intelligence Platform</text>
+  <!-- Title & Narrative -->
+  <g transform="translate(32, 68)">
+    <text x="0" y="24" class="font-display" font-size="30" font-weight="900" fill="#FFFFFF">SURAKSHAAI</text>
+    <text x="200" y="22" class="font-sans" font-size="15" font-weight="600" fill="#8B96A8">• Real-Time Geospatial Safety Intelligence Platform</text>
     
-    <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13.5" fill="#CBD5E1">
-      AI-driven geospatial analytics computing a <tspan fill="#2F86FF" font-weight="700">Dynamic Safety Index (DSI)</tspan> to replace static, reactive crime tables
+    <text x="0" y="52" class="font-sans" font-size="13" fill="#CBD5E1">
+      AI-driven geospatial analytics computing a <tspan fill="#2F86FF" font-weight="700">Dynamic Safety Index (DSI)</tspan> to replace static crime tables
     </text>
-    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13.5" fill="#CBD5E1">
+    <text x="0" y="70" class="font-sans" font-size="13" fill="#CBD5E1">
       with predictive risk forecasts and hazard-aware mobility guidance across real-world streets.
     </text>
   </g>
 
-  <!-- 4 Architectural Modules (Product Case Study Fragment) -->
-  <g transform="translate(32, 178)">
-    <!-- Box 1: Dynamic Heatmap -->
-    <rect x="0" y="0" width="206" height="150" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-    <circle cx="24" cy="24" r="10" fill="#14284D"/>
-    <text x="19" y="29" font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#2F86FF">1</text>
-    <text x="14" y="62" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#F5F7FA">Spatial Heatmaps</text>
-    <text x="14" y="82" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Multi-level risk gradients</text>
-    <text x="14" y="98" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">(District → Ward → Grid)</text>
-    <rect x="14" y="118" width="120" height="20" rx="3" fill="#102038"/>
-    <text x="22" y="132" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">MapLibre GL • Leaflet</text>
+  <!-- 3 Spacious Core Capabilities (No dashboard overlap!) -->
+  <g transform="translate(32, 162)">
+    <!-- Capability 1 -->
+    <rect x="0" y="0" width="276" height="122" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="26" class="font-display" font-size="14" font-weight="800" fill="#F5F7FA">Dynamic Safety Index</text>
+    <text x="16" y="48" class="font-sans" font-size="11.5" fill="#8B96A8">Algorithmic spatial risk scoring</text>
+    <text x="16" y="64" class="font-sans" font-size="11.5" fill="#8B96A8">evaluated across geographic micro-grids.</text>
+    <rect x="16" y="86" width="130" height="20" rx="3" fill="#102038"/>
+    <text x="24" y="100" class="font-sans" font-size="9.5" font-weight="700" fill="#60A5FA">MapLibre GL • Leaflet</text>
 
-    <!-- Box 2: ML Engine -->
-    <rect x="224" y="0" width="206" height="150" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-    <circle cx="24" cy="24" r="10" fill="#14284D"/>
-    <text x="19" y="29" font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#2F86FF">2</text>
-    <text x="14" y="62" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#F5F7FA">ML Microservice</text>
-    <text x="14" y="82" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">FastAPI endpoint,</text>
-    <text x="14" y="98" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">RandomForest risk forecast</text>
-    <rect x="14" y="118" width="130" height="20" rx="3" fill="#102038"/>
-    <text x="22" y="132" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#60A5FA">FastAPI • Scikit-learn</text>
+    <!-- Capability 2 -->
+    <rect x="300" y="0" width="276" height="122" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="26" class="font-display" font-size="14" font-weight="800" fill="#F5F7FA">Predictive ML Inference</text>
+    <text x="16" y="48" class="font-sans" font-size="11.5" fill="#8B96A8">Decoupled FastAPI microservice</text>
+    <text x="16" y="64" class="font-sans" font-size="11.5" fill="#8B96A8">forecasting real-time incident likelihood.</text>
+    <rect x="16" y="86" width="140" height="20" rx="3" fill="#102038"/>
+    <text x="24" y="100" class="font-sans" font-size="9.5" font-weight="700" fill="#60A5FA">FastAPI • Scikit-learn</text>
 
-    <!-- Box 3: NLP Signals -->
-    <rect x="448" y="0" width="206" height="150" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-    <circle cx="24" cy="24" r="10" fill="#2B1424"/>
-    <text x="19" y="29" font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#FF3652">3</text>
-    <text x="14" y="62" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#F5F7FA">NLP Live Signals</text>
-    <text x="14" y="82" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Real-time local incident</text>
-    <text x="14" y="98" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">geolocation &amp; severity tag</text>
-    <rect x="14" y="118" width="130" height="20" rx="3" fill="#2E1624"/>
-    <text x="22" y="132" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#FF8A9A">NLP • Live Streams</text>
-
-    <!-- Box 4: Safe Navigation -->
-    <rect x="672" y="0" width="204" height="150" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
-    <circle cx="24" cy="24" r="10" fill="#122A22"/>
-    <text x="19" y="29" font-family="-apple-system, sans-serif" font-size="13" font-weight="900" fill="#22C55E">4</text>
-    <text x="14" y="62" font-family="-apple-system, sans-serif" font-size="13.5" font-weight="800" fill="#F5F7FA">Safe Navigation</text>
-    <text x="14" y="82" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Lowest-risk waypoint route,</text>
-    <text x="14" y="98" font-family="-apple-system, sans-serif" font-size="11" fill="#8B96A8">Guardian SOS alert session</text>
-    <rect x="14" y="118" width="130" height="20" rx="3" fill="#0E241B"/>
-    <text x="22" y="132" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="700" fill="#34D399">Node.js • Redis • SOS</text>
+    <!-- Capability 3 -->
+    <rect x="600" y="0" width="276" height="122" rx="8" fill="#0A1122" stroke="#1F2F4F" stroke-width="1"/>
+    <text x="16" y="26" class="font-display" font-size="14" font-weight="800" fill="#F5F7FA">Safe-Path Guidance</text>
+    <text x="16" y="48" class="font-sans" font-size="11.5" fill="#8B96A8">Lowest-risk waypoint routing</text>
+    <text x="16" y="64" class="font-sans" font-size="11.5" fill="#8B96A8">with real-time guardian telemetry sessions.</text>
+    <rect x="16" y="86" width="140" height="20" rx="3" fill="#182A45"/>
+    <text x="24" y="100" class="font-sans" font-size="9.5" font-weight="700" fill="#93C5FD">Node.js • PostGIS • Redis</text>
   </g>
 
-  <!-- Bottom Architecture Pill Strip -->
-  <g transform="translate(32, 362)">
-    <rect x="0" y="0" width="876" height="50" rx="8" fill="#080E1C" stroke="#162544" stroke-width="1"/>
-    <text x="18" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#8B96A8">ENGINEERING STACK:</text>
-    
-    <rect x="175" y="13" width="70" height="24" rx="4" fill="#12203A"/>
-    <text x="184" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Node.js</text>
-
-    <rect x="255" y="13" width="75" height="24" rx="4" fill="#12203A"/>
-    <text x="264" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">FastAPI</text>
-
-    <rect x="340" y="13" width="95" height="24" rx="4" fill="#12203A"/>
-    <text x="349" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Scikit-learn</text>
-
-    <rect x="445" y="13" width="105" height="24" rx="4" fill="#12203A"/>
-    <text x="454" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">MapLibre GL</text>
-
-    <rect x="560" y="13" width="75" height="24" rx="4" fill="#12203A"/>
-    <text x="570" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">PostGIS</text>
-
-    <rect x="645" y="13" width="60" height="24" rx="4" fill="#12203A"/>
-    <text x="655" y="29" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#F5F7FA">Redis</text>
-
-    <rect x="715" y="13" width="145" height="24" rx="4" fill="#152F24"/>
-    <text x="725" y="29" font-family="-apple-system, sans-serif" font-size="10" font-weight="700" fill="#22C55E">&#x2714; REPO VERIFIED</text>
+  <!-- Bottom Architecture Strip -->
+  <g transform="translate(32, 305)">
+    <rect x="0" y="0" width="876" height="42" rx="6" fill="#080E1C" stroke="#162544" stroke-width="1"/>
+    <text x="16" y="25" class="font-sans" font-size="11" font-weight="700" fill="#8B96A8">STACK: <tspan fill="#F5F7FA">Python • FastAPI • Scikit-learn • MapLibre GL • PostgreSQL / PostGIS • Redis</tspan></text>
+    <text x="760" y="25" class="font-sans" font-size="11" font-weight="800" fill="#2F86FF">VIEW PROJECT →</text>
   </g>
 </svg>

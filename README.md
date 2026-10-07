@@ -4,38 +4,45 @@
      01 // HERO — IDENTITY & POSITIONING
      ========================================================================= -->
 <a href="https://github.com/xnacro">
-  <img src="./assets/hero.svg?v=3" width="100%" alt="Prince Tiwari — Software Engineer & Builder" />
+  <img src="./assets/hero.svg?v=4" width="100%" alt="Prince Tiwari — Software Engineer & Builder" />
 </a>
 
 <br/><br/>
 
 <!-- =========================================================================
-     02 // RECOGNITION — VERIFIED NATIONAL ACHIEVEMENTS (MOVED HIGH!)
+     02 // RECOGNITION — VERIFIED RECOGNITION
      ========================================================================= -->
-<img src="./assets/achievements.svg?v=3" width="100%" alt="01 // Verified Recognition — Cognithon 2nd, India Innovates Finalist, Flipkart GRiD Semi-Finalist, Surakshaai.org" />
+<img src="./assets/achievements.svg?v=4" width="100%" alt="02 // Verified Recognition — Cognithon 2nd, India Innovates Finalist, Flipkart GRiD Semi-Finalist, Surakshaai.org" />
 
 <br/><br/>
 
 <!-- =========================================================================
-     03 // CURRENT STATE — NOW OPERATING
+     03 // CURRENT STATE — NOW BUILDING
      ========================================================================= -->
-<img src="./assets/current-build.svg?v=3" width="100%" alt="02 // Now Building — SurakshaAI Platform Sprint" />
+<img src="./assets/current-build.svg?v=4" width="100%" alt="03 // Now Building — SurakshaAI Platform Sprint" />
 
 <br/><br/>
 
 <!-- =========================================================================
-     04 // FLAGSHIP SYSTEM — SURAKSHAAI ARCHITECTURAL CASE STUDY
+     04 // FLAGSHIP SYSTEM — SURAKSHAAI
      ========================================================================= -->
 <a href="https://github.com/xnacro/SurakshaAI">
-  <img src="./assets/flagship.svg?v=3" width="100%" alt="03 // Flagship System — SurakshaAI Real-Time Safety Intelligence Platform" />
+  <img src="./assets/flagship.svg?v=4" width="100%" alt="04 // Flagship System — SurakshaAI Real-Time Safety Intelligence Platform" />
 </a>
 
 <br/><br/>
 
 <!-- =========================================================================
-     05 // SELECTED BUILDS — HIGH-IMPACT PRODUCTION ARCHITECTURES
+     05 // THE ENGINE ROOM — PLANETARY ORBITAL CORE & VERIFIED TOOLCHAIN
      ========================================================================= -->
-<img src="./assets/selected-builds.svg?v=3" width="100%" alt="04 // Selected Builds — RESQ, GridShare, MednormAI, OpenRAG" />
+<img src="./assets/stack.svg?v=4" width="100%" alt="05 // The Engine Room — Planetary Orbital System & Verified Toolchain" />
+
+<br/><br/>
+
+<!-- =========================================================================
+     06 // SELECTED BUILDS — HIGH-IMPACT ARCHITECTURES
+     ========================================================================= -->
+<img src="./assets/selected-builds.svg?v=4" width="100%" alt="06 // Selected Builds — RESQ, GridShare, MednormAI, OpenRAG" />
 
 </div>
 
@@ -73,23 +80,16 @@ Beyond flagship platforms, these repositories explore low-latency network primit
 <div align="center">
 
 <!-- =========================================================================
-     06 // THE ENGINE ROOM — PLANETARY ORBITAL CORE & VERIFIED TOOLCHAIN
+     07 // BUILDER ID & CHRONOLOGICAL MILESTONES
      ========================================================================= -->
-<img src="./assets/stack.svg?v=3" width="100%" alt="05 // The Engine Room — Planetary Orbital System & Verified Toolchain" />
+<img src="./assets/id-dashboard.svg?v=4" width="100%" alt="07 // Builder ID Specification Pass & Chronological Milestones" />
 
 <br/><br/>
 
 <!-- =========================================================================
-     07 // BUILDER ID & CHRONOLOGICAL TRAJECTORY
+     08 // TRANSMISSION — CONNECT
      ========================================================================= -->
-<img src="./assets/id-dashboard.svg?v=3" width="100%" alt="06 // Builder ID Specification Pass & Chronological Engineering Journey" />
-
-<br/><br/>
-
-<!-- =========================================================================
-     08 // INITIATE TRANSMISSION — CONNECT
-     ========================================================================= -->
-<img src="./assets/connect.svg?v=3" width="100%" alt="07 // Initiate Transmission — Let's Build Something" />
+<img src="./assets/connect.svg?v=4" width="100%" alt="08 // Transmission — Let's Build Something" />
 
 <br/><br/>
 

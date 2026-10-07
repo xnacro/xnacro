@@ -1,5 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 550" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 520" width="100%" height="100%">
   <defs>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap');
+    .font-display { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      @keyframes orbitPulse {
+        0%, 100% { transform: scale(1); filter: drop-shadow(0 0 6px rgba(47, 134, 255, 0.6)); }
+        50%      { transform: scale(1.05); filter: drop-shadow(0 0 14px rgba(47, 134, 255, 0.9)); }
+      }
+      .core-sun {
+        animation: orbitPulse 3.5s ease-in-out infinite;
+        transform-origin: 205px 275px;
+      }
+    </style>
+    
+    <!-- Technology Brand SVG Marks (ViewBox 0 0 16 16) -->
+    <g id="icon-python" viewBox="0 0 16 16">
+      <path d="M7.9 1C4.4 1 4.2 2.5 4.2 2.5l.01 1.6h3.8v.5H3.1S1.5 4.4 1.5 7.9s1.4 3.5 1.4 3.5h.9v-1.2s-.04-1.4 1.4-1.4h3.7s1.3.02 1.3-1.3V2.4S10.3 1 7.9 1zm-1.1 1.1a.6.6 0 1 1 0 1.2.6.6 0 0 1 0-1.2z" fill="#387EB8"/>
+      <path d="M8.1 15c3.5 0 3.7-1.5 3.7-1.5l-.01-1.6H8v-.5h4.9s1.6-.2 1.6-3.7-1.4-3.5-1.4-3.5h-.9v1.2s.04 1.4-1.4 1.4H7.1s-1.3-.02-1.3 1.3v5.1s-.2 1.4 2.3 1.4zm1.1-1.1a.6.6 0 1 1 0-1.2.6.6 0 0 1 0 1.2z" fill="#FFE052"/>
+    </g>
+    <g id="icon-pytorch" viewBox="0 0 16 16">
+      <path d="M8.8 2.2a5.5 5.5 0 0 0-3.9 9.4l1.5-1.5a3.4 3.4 0 0 1 2.4-5.8V2.2z" fill="#EE4C2C"/>
+      <circle cx="10.5" cy="3" r="1.2" fill="#EE4C2C"/>
+    </g>
+    <g id="icon-scikit" viewBox="0 0 16 16">
+      <circle cx="4.5" cy="4.5" r="2.8" fill="#F89939"/>
+      <circle cx="11.5" cy="5.5" r="2.5" fill="#3499CD"/>
+      <circle cx="8" cy="11.5" r="2.2" fill="#F89939"/>
+      <line x1="4.5" y1="4.5" x2="11.5" y2="5.5" stroke="#94A3B8" stroke-width="1.2"/>
+      <line x1="4.5" y1="4.5" x2="8" y2="11.5" stroke="#94A3B8" stroke-width="1.2"/>
+      <line x1="11.5" y1="5.5" x2="8" y2="11.5" stroke="#94A3B8" stroke-width="1.2"/>
+    </g>
+    <g id="icon-tensorflow" viewBox="0 0 16 16">
+      <path d="M8 1.5l-6 3.4v2.6l6-3.4v10.5l3.5-2V7.1l3.5 2V6.5L8 1.5z" fill="#FF6F00"/>
+      <path d="M8 4.1L4.5 6.1v2.6l3.5-2v7.9l-2.4 1.4V10L3.5 8.7v5.8l4.5 2.6 4.5-2.6V8.7l-2.1 1.3v4.2l-2.4-1.4V4.1z" fill="#FFA800"/>
+    </g>
+    <g id="icon-opencv" viewBox="0 0 16 16">
+      <circle cx="8" cy="4" r="2.5" fill="#EA3829"/>
+      <circle cx="4" cy="11" r="2.5" fill="#4B9626"/>
+      <circle cx="12" cy="11" r="2.5" fill="#0E58A8"/>
+    </g>
+    <g id="icon-numpy" viewBox="0 0 16 16">
+      <rect x="2" y="2" width="12" height="12" rx="2.5" fill="#4DABCF"/>
+      <path d="M4.5 11.5V4.5l5.5 7V4.5" stroke="#013243" stroke-width="1.4" fill="none"/>
+    </g>
+    <g id="icon-pandas" viewBox="0 0 16 16">
+      <rect x="3" y="2.5" width="2.2" height="11" rx="0.5" fill="#130654"/>
+      <rect x="6.9" y="5" width="2.2" height="8.5" rx="0.5" fill="#FFD43B"/>
+      <rect x="10.8" y="3.5" width="2.2" height="7.5" rx="0.5" fill="#E70488"/>
+    </g>
+    <g id="icon-transformers" viewBox="0 0 16 16">
+      <circle cx="8" cy="8" r="6" fill="#FFD21E"/>
+      <circle cx="5.8" cy="6.8" r="1.3" fill="#1E293B"/>
+      <circle cx="10.2" cy="6.8" r="1.3" fill="#1E293B"/>
+      <path d="M5.5 10.2c1.2 1.2 3.8 1.2 5 0" stroke="#1E293B" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="icon-langchain" viewBox="0 0 16 16">
+      <rect x="2" y="5" width="4.5" height="4.5" rx="1.5" fill="#00A67E"/>
+      <rect x="9.5" y="5" width="4.5" height="4.5" rx="1.5" fill="#1C3C3C"/>
+      <line x1="6.5" y1="7.25" x2="9.5" y2="7.25" stroke="#00A67E" stroke-width="2"/>
+    </g>
+    <g id="icon-fastapi" viewBox="0 0 16 16">
+      <circle cx="8" cy="8" r="7" fill="#05998B"/>
+      <path d="M8.5 2.8L4.5 8.5h3.5l-.8 4.7 4.8-5.7H8z" fill="#FFFFFF"/>
+    </g>
+    <g id="icon-typescript" viewBox="0 0 16 16">
+      <rect x="1" y="1" width="14" height="14" rx="2.5" fill="#3178C6"/>
+      <text x="3.5" y="11" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="900" fill="#FFF">TS</text>
+    </g>
+    <g id="icon-javascript" viewBox="0 0 16 16">
+      <rect x="1" y="1" width="14" height="14" rx="2.5" fill="#F7DF1E"/>
+      <text x="3.5" y="11" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="900" fill="#000">JS</text>
+    </g>
+    <g id="icon-sql" viewBox="0 0 16 16">
+      <ellipse cx="8" cy="4" rx="6" ry="2.2" fill="#336791"/>
+      <path d="M2 4v4c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2V4" fill="none" stroke="#336791" stroke-width="1.4"/>
+      <path d="M2 8v4c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2V8" fill="none" stroke="#336791" stroke-width="1.4"/>
+    </g>
+    <g id="icon-cpp" viewBox="0 0 16 16">
+      <path d="M8 1.2l6 3.5v7l-6 3.5-6-3.5v-7L8 1.2z" fill="#00599C"/>
+      <text x="4.2" y="10.8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="900" fill="#FFF">C+</text>
+    </g>
+    <g id="icon-java" viewBox="0 0 16 16">
+      <path d="M5.2 12.2c2.2.4 5.2.4 6.8-.5M4.5 13.8c2.8.6 6.2.6 8.5-.5M6.8 9.8c1.7.3 3.9.3 5-.4" stroke="#EA2D2E" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+      <path d="M9.2 2.5c.6 1.2-1.2 2.3-1.2 3.5s1.7 1.7 1.2 2.8" stroke="#5382A1" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="icon-react" viewBox="0 0 16 16">
+      <ellipse cx="8" cy="8" rx="7" ry="2.6" fill="none" stroke="#61DAFB" stroke-width="1.2"/>
+      <ellipse cx="8" cy="8" rx="7" ry="2.6" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(60 8 8)"/>
+      <ellipse cx="8" cy="8" rx="7" ry="2.6" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(120 8 8)"/>
+      <circle cx="8" cy="8" r="1.5" fill="#61DAFB"/>
+    </g>
+    <g id="icon-nextjs" viewBox="0 0 16 16">
+      <circle cx="8" cy="8" r="7" fill="#000" stroke="#334155" stroke-width="0.8"/>
+      <path d="M5 5v6M11 5v6M5 5l6 6" stroke="#FFF" stroke-width="1.3"/>
+    </g>
+    <g id="icon-maplibre" viewBox="0 0 16 16">
+      <path d="M2.5 4l3.8-1.8L9.8 4 13.5 2.2V12l-3.7 1.8L6.3 12 2.5 13.8V4z" fill="#396BFE" opacity="0.9"/>
+      <path d="M6.3 2.2V12M9.8 4v9.8" stroke="#FFFFFF" stroke-width="1"/>
+    </g>
+    <g id="icon-leaflet" viewBox="0 0 16 16">
+      <path d="M13 2.5C8.5 2.5 3.5 7 3.5 11.5c0 1.8.6 2.5 1.8 2.5 4.5 0 7.7-6.5 7.7-11.5z" fill="#199900"/>
+      <path d="M5.2 13.8c1.8-3 4-6 7.8-11.3" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="icon-tailwind" viewBox="0 0 16 16">
+      <path d="M4 6.2c.9-1.8 2.5-2.2 4-1.2 1.4.9 2 2.4 3.1 2.6 1.2.3 2.3-.4 3.2-1.4-.9 1.8-2.5 2.2-4 1.2-1.4-.9-2-2.4-3.1-2.6-1.2-.3-2.3.4-3.2 1.4zm-2.3 4.6c.9-1.8 2.5-2.2 4-1.2 1.4.9 2 2.4 3.1 2.6 1.2.3 2.3-.4 3.2-1.4-.9 1.8-2.5 2.2-4 1.2-1.4-.9-2-2.4-3.1-2.6-1.2-.3-2.3.4-3.2 1.4z" fill="#06B6D4"/>
+    </g>
+    <g id="icon-nodejs" viewBox="0 0 16 16">
+      <path d="M8 1.2l6 3.5v7l-6 3.5-6-3.5v-7L8 1.2z" fill="#339933"/>
+      <text x="5" y="10.8" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="900" fill="#FFF">N</text>
+    </g>
+    <g id="icon-postgres" viewBox="0 0 16 16">
+      <path d="M8 2a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6s6-2.7 6-6a6 6 0 0 0-6-6zm-1.2 9.5c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.5 1.2-1.2 1.2zm2.4-3.6H5.6V6.6h3.6v1.3z" fill="#4169E1"/>
+    </g>
+    <g id="icon-redis" viewBox="0 0 16 16">
+      <path d="M8 2.2L2.5 5.5l5.5 3.3 5.5-3.3L8 2.2zm-5.5 5.5l5.5 3.3 5.5-3.3v2.2L8 13.2l-5.5-3.3V7.7zm0 4.4l5.5 3.3 5.5-3.3v2.2L8 17.6l-5.5-3.3v-2.2z" fill="#DC382D"/>
+    </g>
+    <g id="icon-websockets" viewBox="0 0 16 16">
+      <circle cx="4.5" cy="8" r="3" fill="#2F86FF"/>
+      <circle cx="11.5" cy="8" r="3" fill="#FF3652"/>
+      <path d="M6 6.5l4 3M10 6.5l-4 3" stroke="#FFFFFF" stroke-width="1.1"/>
+    </g>
+
     <linearGradient id="stk-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#070B16"/>
       <stop offset="60%" stop-color="#091225"/>
@@ -7,13 +130,13 @@
     </linearGradient>
     <linearGradient id="stk-border" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.85"/>
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#2F86FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.6"/>
     </linearGradient>
     <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.95"/>
       <stop offset="35%" stop-color="#2F86FF" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#60A5FA" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#070B16" stop-opacity="0"/>
     </radialGradient>
     <pattern id="stk-dots" width="22" height="22" patternUnits="userSpaceOnUse">
@@ -21,223 +144,274 @@
     </pattern>
   </defs>
 
-  <style>
-    @keyframes orbitPulse {{
-      0%, 100% {{ transform: scale(1); filter: drop-shadow(0 0 6px rgba(47, 134, 255, 0.6)); }}
-      50%      {{ transform: scale(1.05); filter: drop-shadow(0 0 16px rgba(47, 134, 255, 0.9)); }}
-    }}
-    .core-sun {{
-      animation: orbitPulse 3.5s ease-in-out infinite;
-      transform-origin: 205px 285px;
-    }}
-  </style>
+  <rect x="0" y="0" width="940" height="520" rx="18" fill="url(#stk-bg)" stroke="url(#stk-border)" stroke-width="1.6"/>
+  <rect x="0" y="0" width="940" height="520" rx="18" fill="url(#stk-dots)"/>
 
-  <rect x="0" y="0" width="940" height="550" rx="18" fill="url(#stk-bg)" stroke="url(#stk-border)" stroke-width="1.6"/>
-  <rect x="0" y="0" width="940" height="550" rx="18" fill="url(#stk-dots)"/>
-
-  <!-- Top Title Header with Sleek Modern Subheading Font -->
-  <g transform="translate(36, 28)">
-    <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" letter-spacing="2" fill="#2F86FF">05 // THE ENGINE ROOM • VERIFIED TOOLCHAIN</text>
-    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">TOOLS CHANGE. CURIOSITY DOESN'T<tspan fill="#FF3652">.</tspan></text>
-    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#60A5FA">AI &amp; MACHINE LEARNING • SPATIAL RUNTIMES • DISTRIBUTED INFRASTRUCTURE</text>
+  <!-- Top Title Header -->
+  <g transform="translate(36, 26)">
+    <text x="0" y="10" class="font-sans" font-size="11" font-weight="700" letter-spacing="2" fill="#2F86FF">05 // THE ENGINE ROOM</text>
+    <text x="0" y="36" class="font-display" font-size="24" font-weight="900" fill="#FFFFFF">TOOLS CHANGE. CURIOSITY DOESN'T<tspan fill="#FF3652">.</tspan></text>
+    <text x="0" y="56" class="font-sans" font-size="11.5" font-weight="600" fill="#8B96A8">AI &amp; MACHINE LEARNING • SPATIAL RUNTIMES • DISTRIBUTED SYSTEMS</text>
   </g>
 
-  <!-- ================= LEFT: COMPLETE PLANETARY ORBITAL SYSTEM ================= -->
-  <g transform="translate(0, 0)">
-    <!-- Orbit 1: Inner Orbit (Python / AI Core) - Radius 68 -->
-    <ellipse cx="205" cy="285" rx="68" ry="60" fill="none" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="4,4" transform="rotate(-15 205 285)"/>
+  <!-- ================= LEFT: REAL ORBITAL PLANETARY SYSTEM ================= -->
+  <g transform="translate(0, 10)">
+    <!-- Orbit 1: Inner Orbit (Python / AI Core) - 18s -->
+    <ellipse cx="205" cy="275" rx="68" ry="60" fill="none" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="4,4" transform="rotate(-15 205 275)"/>
 
-    <!-- Orbit 2: Machine Learning Tensor Orbit - Ellipse rx=108, ry=78, deg=28 -->
-    <ellipse cx="205" cy="285" rx="108" ry="78" fill="none" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="5,4" transform="rotate(28 205 285)"/>
+    <!-- Orbit 2: Mid Orbit (FastAPI / Backend) - 24s -->
+    <ellipse cx="205" cy="275" rx="112" ry="76" fill="none" stroke="#60A5FA" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="5,4" transform="rotate(25 205 275)"/>
 
-    <!-- Orbit 3: Frontend & Spatial Visualizer Orbit - Ellipse rx=142, ry=68, deg=-32 -->
-    <ellipse cx="205" cy="285" rx="142" ry="68" fill="none" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="6,4" transform="rotate(-32 205 285)"/>
+    <!-- Orbit 3: Outer Orbit (React / Frontend) - 30s -->
+    <ellipse cx="205" cy="275" rx="148" ry="74" fill="none" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="6,4" transform="rotate(-30 205 275)"/>
 
-    <!-- Orbit 4: PostGIS & Geospatial Hazard Orbit - Ellipse rx=172, ry=92, deg=45 -->
-    <ellipse cx="205" cy="285" rx="172" ry="92" fill="none" stroke="#FF3652" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="5,5" transform="rotate(45 205 285)"/>
+    <!-- Orbit 4: Deep Orbit (PostGIS / Spatial) - 36s -->
+    <ellipse cx="205" cy="275" rx="180" ry="96" fill="none" stroke="#FF3652" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="5,5" transform="rotate(45 205 275)"/>
 
-    <!-- Orbit 5: High-Concurrency Backend Orbit - Ellipse rx=194, ry=104, deg=-58 -->
-    <ellipse cx="205" cy="285" rx="194" ry="104" fill="none" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="6,5" transform="rotate(-58 205 285)"/>
+    <!-- Ambient Orbital Particle Stars with independent twinkle -->
+    <circle cx="150" cy="195" r="1.5" fill="#60A5FA" opacity="0.6"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="270" cy="345" r="1.5" fill="#60A5FA" opacity="0.7"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="85" cy="285" r="1.5" fill="#FF3652" opacity="0.6"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="225" r="1.5" fill="#60A5FA" opacity="0.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
 
-    <!-- Ambient Orbital Particle Stars -->
-    <circle cx="150" cy="205" r="1.5" fill="#60A5FA" opacity="0.6"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/></circle>
-    <circle cx="270" cy="355" r="1.5" fill="#A855F7" opacity="0.7"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.7s" repeatCount="indefinite"/></circle>
-    <circle cx="85" cy="295" r="1.5" fill="#FF3652" opacity="0.6"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
-    <circle cx="320" cy="235" r="1.5" fill="#10B981" opacity="0.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
-
-    <!-- CENTRAL GLOWING SUN / CORE (PT - Prince Tiwari Identity Core) -->
+    <!-- CENTRAL GLOWING SUN / PT CORE -->
     <g class="core-sun">
-      <!-- Outer Corona Glow -->
-      <circle cx="205" cy="285" r="44" fill="url(#sun-glow)"/>
-      <circle cx="205" cy="285" r="32" fill="none" stroke="#60A5FA" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.7">
-        <animateTransform attributeName="transform" type="rotate" from="0 205 285" to="360 205 285" dur="18s" repeatCount="indefinite"/>
+      <circle cx="205" cy="275" r="44" fill="url(#sun-glow)"/>
+      <circle cx="205" cy="275" r="32" fill="none" stroke="#60A5FA" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="0 205 275" to="360 205 275" dur="18s" repeatCount="indefinite"/>
       </circle>
-      <!-- Sun Core Badge -->
-      <rect x="180" y="260" width="50" height="50" rx="12" fill="#09142A" stroke="#2F86FF" stroke-width="2"/>
-      <text x="205" y="289" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">PT</text>
-      <text x="205" y="302" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="7.5" font-weight="800" fill="#60A5FA" letter-spacing="1">CORE</text>
+      <rect x="180" y="250" width="50" height="50" rx="12" fill="#09142A" stroke="#2F86FF" stroke-width="2"/>
+      <text x="205" y="279" text-anchor="middle" class="font-display" font-size="18" font-weight="900" fill="#FFFFFF">PT</text>
+      <text x="205" y="292" text-anchor="middle" class="font-sans" font-size="7.5" font-weight="800" fill="#60A5FA" letter-spacing="1">CORE</text>
     </g>
 
-    <!-- PLANETARY REVOLVING BODIES -->
+    <!-- REVOLVING PLANETARY NODES (Layered linear speeds, counter-rotated with REAL brand marks) -->
 
-    <!-- PLANET 1: Python / AI (Inner Orbit - 12s Period) -->
+    <!-- Planet 1: Python / AI Core (18s) with PyTorch Moon -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 205 285" to="360 205 285" dur="12s" repeatCount="indefinite"/>
-      <g transform="translate(205, 221)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="12s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#08152B" stroke="#2F86FF" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#2F86FF" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="900" fill="#60A5FA">Py</text>
+      <animateTransform attributeName="transform" type="rotate" from="0 205 275" to="360 205 275" dur="18s" repeatCount="indefinite"/>
+      <g transform="translate(205, 215)">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="18s" repeatCount="indefinite"/>
+        <circle cx="0" cy="0" r="17" fill="#08152B" stroke="#2F86FF" stroke-width="1.6"/>
+        <g transform="translate(-8, -8)">
+          <use href="#icon-python" width="16" height="16"/>
+        </g>
         <!-- Orbiting PyTorch Moon -->
         <g>
-          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3s" repeatCount="indefinite"/>
-          <circle cx="23" cy="0" r="3.5" fill="#EF4444"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="4s" repeatCount="indefinite"/>
+          <g transform="translate(24, 0)">
+            <circle cx="0" cy="0" r="6" fill="#1A0C16" stroke="#EE4C2C" stroke-width="1"/>
+            <g transform="translate(-4, -4)"><use href="#icon-pytorch" width="8" height="8"/></g>
+          </g>
         </g>
       </g>
     </g>
 
-    <!-- PLANET 2: PyTorch / Machine Learning (Mid Orbit - 18s Period) -->
+    <!-- Planet 2: FastAPI / Backend (24s) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="90 205 285" to="450 205 285" dur="18s" repeatCount="indefinite"/>
-      <g transform="translate(295, 260)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="18s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#170F28" stroke="#A855F7" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#A855F7" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="900" fill="#D8B4FE">ML</text>
-      </g>
-    </g>
-
-    <!-- PLANET 3: React / Frontend (Mid-Outer Orbit - 24s Period) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="210 205 285" to="570 205 285" dur="24s" repeatCount="indefinite"/>
-      <g transform="translate(90, 265)">
+      <animateTransform attributeName="transform" type="rotate" from="90 205 275" to="450 205 275" dur="24s" repeatCount="indefinite"/>
+      <g transform="translate(300, 255)">
         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="24s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#07152B" stroke="#2F86FF" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#2F86FF" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="900" fill="#93C5FD">Re</text>
+        <circle cx="0" cy="0" r="16" fill="#07152B" stroke="#05998B" stroke-width="1.6"/>
+        <g transform="translate(-7, -7)">
+          <use href="#icon-fastapi" width="14" height="14"/>
+        </g>
       </g>
     </g>
 
-    <!-- PLANET 4: PostGIS / Spatial Intelligence (Outer Orbit - 30s Counter Period) -->
+    <!-- Planet 3: React / Frontend (30s) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360 205 285" to="0 205 285" dur="30s" repeatCount="indefinite"/>
-      <g transform="translate(125, 385)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" from="210 205 275" to="570 205 275" dur="30s" repeatCount="indefinite"/>
+      <g transform="translate(90, 255)">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="30s" repeatCount="indefinite"/>
+        <circle cx="0" cy="0" r="16" fill="#061226" stroke="#61DAFB" stroke-width="1.6"/>
+        <g transform="translate(-7, -7)">
+          <use href="#icon-react" width="14" height="14"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- Planet 4: PostGIS / Spatial (36s Counter) -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360 205 275" to="0 205 275" dur="36s" repeatCount="indefinite"/>
+      <g transform="translate(125, 380)">
+        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="36s" repeatCount="indefinite"/>
         <circle cx="0" cy="0" r="16" fill="#1C0E1E" stroke="#FF3652" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#FF3652" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#FFA3AF">GIS</text>
-      </g>
-    </g>
-
-    <!-- PLANET 5: FastAPI / Scalable Microservices (Deep Orbit - 36s Period) -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="300 205 285" to="660 205 285" dur="36s" repeatCount="indefinite"/>
-      <g transform="translate(320, 370)">
-        <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="36s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#0A1D1A" stroke="#10B981" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#10B981" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#6EE7B7">API</text>
+        <g transform="translate(-7, -7)">
+          <use href="#icon-postgres" width="14" height="14"/>
+        </g>
       </g>
     </g>
 
     <!-- Left Footnote -->
-    <text x="205" y="495" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="800" letter-spacing="1.5" fill="#64748B">PLANETARY RUNTIME • CONTINUOUS ORBITAL SHIP CYCLE</text>
+    <text x="205" y="480" text-anchor="middle" class="font-sans" font-size="10" font-weight="700" letter-spacing="1.5" fill="#64748B">PLANETARY RUNTIME • CONTINUOUS ORBITAL SHIP CYCLE</text>
   </g>
 
-  <!-- ================= RIGHT: COMPLETE TECH STACK WITH DEDICATED AI/ML IDENTITY ================= -->
-  <g transform="translate(425, 95)">
+  <!-- ================= RIGHT: COMPLETE REAL TECH STACK (Zero Empty Boxes, Brand Icons!) ================= -->
+  <g transform="translate(425, 90)">
 
-    <!-- Section 01: AI & Machine Learning (PROMINENT DEDICATED IDENTITY) -->
+    <!-- 01 // AI & MACHINE LEARNING -->
     <g transform="translate(0, 0)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#C084FC">01 // AI &amp; MACHINE LEARNING SYSTEMS</text>
+      <text x="0" y="11" class="font-sans" font-size="11" font-weight="700" letter-spacing="1.5" fill="#60A5FA">01 // AI &amp; MACHINE LEARNING</text>
+      <!-- Row 1 -->
       <g transform="translate(0, 20)">
-        <!-- Python -->
         <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="85" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">Python</text>
+          <rect x="0" y="0" width="85" height="28" rx="6" fill="#0C1527" stroke="#2F86FF" stroke-width="1.1"/>
+          <g transform="translate(8, 6)"><use href="#icon-python" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Python</text>
         </g>
-        <!-- PyTorch -->
         <g transform="translate(93, 0)">
-          <rect x="0" y="0" width="85" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">PyTorch</text>
+          <rect x="0" y="0" width="90" height="28" rx="6" fill="#0C1527" stroke="#2F86FF" stroke-width="1.1"/>
+          <g transform="translate(8, 6)"><use href="#icon-pytorch" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">PyTorch</text>
         </g>
-        <!-- Scikit-learn -->
+        <g transform="translate(191, 0)">
+          <rect x="0" y="0" width="105" height="28" rx="6" fill="#0C1527" stroke="#2F86FF" stroke-width="1.1"/>
+          <g transform="translate(8, 6)"><use href="#icon-scikit" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Scikit-learn</text>
+        </g>
+        <g transform="translate(304, 0)">
+          <rect x="0" y="0" width="105" height="28" rx="6" fill="#0C1527" stroke="#2F86FF" stroke-width="1.1"/>
+          <g transform="translate(8, 6)"><use href="#icon-tensorflow" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">TensorFlow</text>
+        </g>
+        <g transform="translate(417, 0)">
+          <rect x="0" y="0" width="80" height="28" rx="6" fill="#0C1527" stroke="#2F86FF" stroke-width="1.1"/>
+          <g transform="translate(8, 6)"><use href="#icon-opencv" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">OpenCV</text>
+        </g>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 56)">
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="85" height="26" rx="5" fill="#0C1527" stroke="#1E2F4D" stroke-width="0.9"/>
+          <g transform="translate(8, 5)"><use href="#icon-numpy" width="15" height="15"/></g>
+          <text x="28" y="17" class="font-sans" font-size="10.5" font-weight="600" fill="#CBD5E1">NumPy</text>
+        </g>
+        <g transform="translate(93, 0)">
+          <rect x="0" y="0" width="85" height="26" rx="5" fill="#0C1527" stroke="#1E2F4D" stroke-width="0.9"/>
+          <g transform="translate(8, 5)"><use href="#icon-pandas" width="15" height="15"/></g>
+          <text x="28" y="17" class="font-sans" font-size="10.5" font-weight="600" fill="#CBD5E1">Pandas</text>
+        </g>
         <g transform="translate(186, 0)">
-          <rect x="0" y="0" width="105" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">Scikit-learn</text>
+          <rect x="0" y="0" width="112" height="26" rx="5" fill="#0C1527" stroke="#1E2F4D" stroke-width="0.9"/>
+          <g transform="translate(8, 5)"><use href="#icon-transformers" width="15" height="15"/></g>
+          <text x="28" y="17" class="font-sans" font-size="10.5" font-weight="600" fill="#CBD5E1">Transformers</text>
         </g>
-        <!-- TensorFlow -->
-        <g transform="translate(299, 0)">
-          <rect x="0" y="0" width="100" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">TensorFlow</text>
+        <g transform="translate(306, 0)">
+          <rect x="0" y="0" width="100" height="26" rx="5" fill="#0C1527" stroke="#1E2F4D" stroke-width="0.9"/>
+          <g transform="translate(8, 5)"><use href="#icon-langchain" width="15" height="15"/></g>
+          <text x="28" y="17" class="font-sans" font-size="10.5" font-weight="600" fill="#CBD5E1">LangChain</text>
         </g>
-        <!-- OpenCV -->
-        <g transform="translate(407, 0)">
-          <rect x="0" y="0" width="75" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-          <text x="10" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">OpenCV</text>
-        </g>
-
-        <!-- Row 2 of ML: NumPy, Pandas, Transformers, LangChain, FastAPI -->
-        <g transform="translate(0, 36)">
-          <rect x="0" y="0" width="85" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
-          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">NumPy</text>
-
-          <rect x="93" y="0" width="85" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
-          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">Pandas</text>
-
-          <rect x="186" y="0" width="105" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
-          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">Transformers</text>
-
-          <rect x="299" y="0" width="95" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
-          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">LangChain</text>
-
-          <rect x="402" y="0" width="80" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
-          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">FastAPI</text>
+        <g transform="translate(414, 0)">
+          <rect x="0" y="0" width="83" height="26" rx="5" fill="#0C1527" stroke="#1E2F4D" stroke-width="0.9"/>
+          <g transform="translate(8, 5)"><use href="#icon-fastapi" width="15" height="15"/></g>
+          <text x="28" y="17" class="font-sans" font-size="10.5" font-weight="600" fill="#CBD5E1">FastAPI</text>
         </g>
       </g>
     </g>
 
-    <!-- Section 02: Core Programming Languages -->
-    <g transform="translate(0, 108)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#60A5FA">02 // PROGRAMMING LANGUAGES</text>
+    <!-- 02 // LANGUAGES -->
+    <g transform="translate(0, 114)">
+      <text x="0" y="11" class="font-sans" font-size="11" font-weight="700" letter-spacing="1.5" fill="#60A5FA">02 // PROGRAMMING LANGUAGES</text>
       <g transform="translate(0, 20)">
-        <rect x="0" y="0" width="80" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Python</text>
-        <rect x="88" y="0" width="98" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">TypeScript</text>
-        <rect x="194" y="0" width="98" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">JavaScript</text>
-        <rect x="300" y="0" width="62" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="14" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">SQL</text>
-        <rect x="370" y="0" width="55" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">C++</text>
-        <rect x="433" y="0" width="49" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="10" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Java</text>
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="80" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-python" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Python</text>
+        </g>
+        <g transform="translate(88, 0)">
+          <rect x="0" y="0" width="102" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-typescript" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">TypeScript</text>
+        </g>
+        <g transform="translate(198, 0)">
+          <rect x="0" y="0" width="100" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-javascript" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">JavaScript</text>
+        </g>
+        <g transform="translate(306, 0)">
+          <rect x="0" y="0" width="65" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-sql" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">SQL</text>
+        </g>
+        <g transform="translate(379, 0)">
+          <rect x="0" y="0" width="58" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-cpp" width="16" height="16"/></g>
+          <text x="27" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">C++</text>
+        </g>
+        <g transform="translate(445, 0)">
+          <rect x="0" y="0" width="55" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-java" width="16" height="16"/></g>
+          <text x="26" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Java</text>
+        </g>
       </g>
     </g>
 
-    <!-- Section 03: Frontend & Spatial Runtime -->
-    <g transform="translate(0, 184)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#38BDF8">03 // FRONTEND &amp; SPATIAL VISUALIZATION</text>
+    <!-- 03 // FRONTEND & SPATIAL -->
+    <g transform="translate(0, 194)">
+      <text x="0" y="11" class="font-sans" font-size="11" font-weight="700" letter-spacing="1.5" fill="#60A5FA">03 // FRONTEND &amp; SPATIAL VISUALIZATION</text>
       <g transform="translate(0, 20)">
-        <rect x="0" y="0" width="70" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">React</text>
-        <rect x="78" y="0" width="78" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Next.js</text>
-        <rect x="164" y="0" width="112" height="28" rx="6" fill="#081A33" stroke="#2F86FF" stroke-width="1.2"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#60A5FA">MapLibre GL</text>
-        <rect x="284" y="0" width="76" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Leaflet</text>
-        <rect x="368" y="0" width="114" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Tailwind CSS</text>
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="76" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-react" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">React</text>
+        </g>
+        <g transform="translate(84, 0)">
+          <rect x="0" y="0" width="82" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-nextjs" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Next.js</text>
+        </g>
+        <g transform="translate(174, 0)">
+          <rect x="0" y="0" width="118" height="28" rx="6" fill="#081A33" stroke="#2F86FF" stroke-width="1.2"/>
+          <g transform="translate(8, 6)"><use href="#icon-maplibre" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#60A5FA">MapLibre GL</text>
+        </g>
+        <g transform="translate(300, 0)">
+          <rect x="0" y="0" width="82" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-leaflet" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Leaflet</text>
+        </g>
+        <g transform="translate(390, 0)">
+          <rect x="0" y="0" width="110" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-tailwind" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Tailwind CSS</text>
+        </g>
       </g>
     </g>
 
-    <!-- Section 04: Backend & Spatial Infrastructure -->
-    <g transform="translate(0, 260)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#34D399">04 // BACKEND &amp; SPATIAL INFRASTRUCTURE</text>
+    <!-- 04 // BACKEND & DATABASES -->
+    <g transform="translate(0, 274)">
+      <text x="0" y="11" class="font-sans" font-size="11" font-weight="700" letter-spacing="1.5" fill="#60A5FA">04 // BACKEND &amp; SPATIAL INFRASTRUCTURE</text>
       <g transform="translate(0, 20)">
-        <rect x="0" y="0" width="75" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">FastAPI</text>
-        <rect x="83" y="0" width="78" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Node.js</text>
-        <rect x="169" y="0" width="135" height="28" rx="6" fill="#1C1022" stroke="#FF354F" stroke-width="1.2"/><text x="10" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#FF8A9A">PostgreSQL / GIS</text>
-        <rect x="312" y="0" width="68" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Redis</text>
-        <rect x="388" y="0" width="94" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">WebSockets</text>
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="84" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-fastapi" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">FastAPI</text>
+        </g>
+        <g transform="translate(92, 0)">
+          <rect x="0" y="0" width="86" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-nodejs" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Node.js</text>
+        </g>
+        <g transform="translate(186, 0)">
+          <rect x="0" y="0" width="138" height="28" rx="6" fill="#1C1022" stroke="#FF3652" stroke-width="1.2"/>
+          <g transform="translate(8, 6)"><use href="#icon-postgres" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#FF8A9A">PostgreSQL / GIS</text>
+        </g>
+        <g transform="translate(332, 0)">
+          <rect x="0" y="0" width="75" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-redis" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="11" font-weight="700" fill="#F1F5F9">Redis</text>
+        </g>
+        <g transform="translate(415, 0)">
+          <rect x="0" y="0" width="85" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
+          <g transform="translate(8, 6)"><use href="#icon-websockets" width="16" height="16"/></g>
+          <text x="28" y="18" class="font-sans" font-size="10.5" font-weight="700" fill="#F1F5F9">WebSockets</text>
+        </g>
       </g>
     </g>
 
-    <!-- System Flow Graphic Visual: DATA -> MODEL -> INFERENCE API -->
-    <g transform="translate(0, 335)">
-      <rect x="0" y="0" width="482" height="42" rx="6" fill="#080F1E" stroke="#162544" stroke-width="1"/>
-      <text x="14" y="26" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#8B96A8">SYSTEM VECTOR: <tspan fill="#60A5FA">DATA PIPELINE</tspan> → <tspan fill="#A855F7">ML MODEL</tspan> → <tspan fill="#34D399">FASTAPI INFERENCE</tspan> → <tspan fill="#F1F5F9">CLIENT UI</tspan></text>
-    </g>
   </g>
 </svg>
