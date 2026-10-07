@@ -1,115 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 940 500" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 550" width="100%" height="100%">
   <defs>
     <linearGradient id="stk-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060913"/>
-      <stop offset="60%" stop-color="#091224"/>
-      <stop offset="100%" stop-color="#060913"/>
+      <stop offset="0%" stop-color="#070B16"/>
+      <stop offset="60%" stop-color="#091225"/>
+      <stop offset="100%" stop-color="#070B16"/>
     </linearGradient>
     <linearGradient id="stk-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#247BFF" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#FF354F" stop-opacity="0.5"/>
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF3652" stop-opacity="0.65"/>
     </linearGradient>
     <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
-      <stop offset="35%" stop-color="#247BFF" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#060913" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="planet-glow-cyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#2F86FF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#2F86FF" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#070B16" stop-opacity="0"/>
     </radialGradient>
     <pattern id="stk-dots" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#1E293B" opacity="0.45"/>
+      <circle cx="2" cy="2" r="1.1" fill="#1C2B49" opacity="0.45"/>
     </pattern>
   </defs>
 
   <style>
-    @keyframes orbitPulse {
-      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6)); }
-      50%      { transform: scale(1.06); filter: drop-shadow(0 0 18px rgba(36, 123, 255, 0.9)); }
-    }
-    @keyframes orbitSpinCW {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
-    }
-    @keyframes orbitSpinCCW {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(-360deg); }
-    }
-    .core-sun {
+    @keyframes orbitPulse {{
+      0%, 100% {{ transform: scale(1); filter: drop-shadow(0 0 6px rgba(47, 134, 255, 0.6)); }}
+      50%      {{ transform: scale(1.05); filter: drop-shadow(0 0 16px rgba(47, 134, 255, 0.9)); }}
+    }}
+    .core-sun {{
       animation: orbitPulse 3.5s ease-in-out infinite;
-      transform-origin: 205px 260px;
-    }
+      transform-origin: 205px 285px;
+    }}
   </style>
 
-  <rect x="0" y="0" width="940" height="500" rx="18" fill="url(#stk-bg)" stroke="url(#stk-border)" stroke-width="1.6"/>
-  <rect x="0" y="0" width="940" height="500" rx="18" fill="url(#stk-dots)"/>
+  <rect x="0" y="0" width="940" height="550" rx="18" fill="url(#stk-bg)" stroke="url(#stk-border)" stroke-width="1.6"/>
+  <rect x="0" y="0" width="940" height="550" rx="18" fill="url(#stk-dots)"/>
 
   <!-- Top Title Header with Sleek Modern Subheading Font -->
   <g transform="translate(36, 28)">
-    <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="11" font-weight="800" letter-spacing="2.2" fill="#60A5FA">03 // MY ENGINE ROOM</text>
-    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="26" font-weight="900" fill="#FFFFFF">TOOLS CHANGE. CURIOSITY DOESN'T<tspan fill="#FF354F">.</tspan></text>
-    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#38BDF8">AI &amp; DEEP LEARNING • SPATIAL INTELLIGENCE • PRODUCTION RUNTIMES</text>
+    <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" letter-spacing="2" fill="#2F86FF">05 // THE ENGINE ROOM • VERIFIED TOOLCHAIN</text>
+    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">TOOLS CHANGE. CURIOSITY DOESN'T<tspan fill="#FF3652">.</tspan></text>
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#60A5FA">AI &amp; MACHINE LEARNING • SPATIAL RUNTIMES • DISTRIBUTED INFRASTRUCTURE</text>
   </g>
 
   <!-- ================= LEFT: COMPLETE PLANETARY ORBITAL SYSTEM ================= -->
   <g transform="translate(0, 0)">
-    <!-- Orbit 1: Inner Orbit (Python / Core AI) - Radius 68 -->
-    <ellipse cx="205" cy="260" rx="68" ry="60" fill="none" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="4,4" transform="rotate(-15 205 260)"/>
+    <!-- Orbit 1: Inner Orbit (Python / AI Core) - Radius 68 -->
+    <ellipse cx="205" cy="285" rx="68" ry="60" fill="none" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="4,4" transform="rotate(-15 205 285)"/>
 
     <!-- Orbit 2: Machine Learning Tensor Orbit - Ellipse rx=108, ry=78, deg=28 -->
-    <ellipse cx="205" cy="260" rx="108" ry="78" fill="none" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="5,4" transform="rotate(28 205 260)"/>
+    <ellipse cx="205" cy="285" rx="108" ry="78" fill="none" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="5,4" transform="rotate(28 205 285)"/>
 
     <!-- Orbit 3: Frontend & Spatial Visualizer Orbit - Ellipse rx=142, ry=68, deg=-32 -->
-    <ellipse cx="205" cy="260" rx="142" ry="68" fill="none" stroke="#247BFF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="6,4" transform="rotate(-32 205 260)"/>
+    <ellipse cx="205" cy="285" rx="142" ry="68" fill="none" stroke="#2F86FF" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="6,4" transform="rotate(-32 205 285)"/>
 
     <!-- Orbit 4: PostGIS & Geospatial Hazard Orbit - Ellipse rx=172, ry=92, deg=45 -->
-    <ellipse cx="205" cy="260" rx="172" ry="92" fill="none" stroke="#FF354F" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="5,5" transform="rotate(45 205 260)"/>
+    <ellipse cx="205" cy="285" rx="172" ry="92" fill="none" stroke="#FF3652" stroke-width="1.2" stroke-opacity="0.35" stroke-dasharray="5,5" transform="rotate(45 205 285)"/>
 
     <!-- Orbit 5: High-Concurrency Backend Orbit - Ellipse rx=194, ry=104, deg=-58 -->
-    <ellipse cx="205" cy="260" rx="194" ry="104" fill="none" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="6,5" transform="rotate(-58 205 260)"/>
+    <ellipse cx="205" cy="285" rx="194" ry="104" fill="none" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.3" stroke-dasharray="6,5" transform="rotate(-58 205 285)"/>
 
     <!-- Ambient Orbital Particle Stars -->
-    <circle cx="150" cy="180" r="1.5" fill="#38BDF8" opacity="0.6">
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="270" cy="330" r="1.5" fill="#A855F7" opacity="0.7">
-      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.7s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="85" cy="270" r="1.5" fill="#FF354F" opacity="0.6">
-      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="320" cy="210" r="1.5" fill="#10B981" opacity="0.5">
-      <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="150" cy="205" r="1.5" fill="#60A5FA" opacity="0.6"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="270" cy="355" r="1.5" fill="#A855F7" opacity="0.7"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.7s" repeatCount="indefinite"/></circle>
+    <circle cx="85" cy="295" r="1.5" fill="#FF3652" opacity="0.6"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="320" cy="235" r="1.5" fill="#10B981" opacity="0.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
 
-    <!-- CENTRAL GLOWING SUN / CORE (PT - Prince Tiwari) -->
+    <!-- CENTRAL GLOWING SUN / CORE (PT - Prince Tiwari Identity Core) -->
     <g class="core-sun">
       <!-- Outer Corona Glow -->
-      <circle cx="205" cy="260" r="44" fill="url(#sun-glow)"/>
-      <circle cx="205" cy="260" r="32" fill="none" stroke="#38BDF8" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.7">
-        <animateTransform attributeName="transform" type="rotate" from="0 205 260" to="360 205 260" dur="15s" repeatCount="indefinite"/>
+      <circle cx="205" cy="285" r="44" fill="url(#sun-glow)"/>
+      <circle cx="205" cy="285" r="32" fill="none" stroke="#60A5FA" stroke-width="1.2" stroke-dasharray="3,3" opacity="0.7">
+        <animateTransform attributeName="transform" type="rotate" from="0 205 285" to="360 205 285" dur="18s" repeatCount="indefinite"/>
       </circle>
       <!-- Sun Core Badge -->
-      <rect x="180" y="235" width="50" height="50" rx="12" fill="#09142A" stroke="#247BFF" stroke-width="2"/>
-      <text x="205" y="264" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">PT</text>
-      <text x="205" y="277" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="7.5" font-weight="800" fill="#38BDF8" letter-spacing="1">CORE</text>
+      <rect x="180" y="260" width="50" height="50" rx="12" fill="#09142A" stroke="#2F86FF" stroke-width="2"/>
+      <text x="205" y="289" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF">PT</text>
+      <text x="205" y="302" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="7.5" font-weight="800" fill="#60A5FA" letter-spacing="1">CORE</text>
     </g>
 
-    <!-- ================= PLANETARY REVOLVING BODIES ================= -->
+    <!-- PLANETARY REVOLVING BODIES -->
 
     <!-- PLANET 1: Python / AI (Inner Orbit - 12s Period) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="0 205 260" to="360 205 260" dur="12s" repeatCount="indefinite"/>
-      <g transform="translate(205, 196)">
-        <!-- Counter-rotate so text stays upright -->
+      <animateTransform attributeName="transform" type="rotate" from="0 205 285" to="360 205 285" dur="12s" repeatCount="indefinite"/>
+      <g transform="translate(205, 221)">
         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="12s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#08152B" stroke="#38BDF8" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="900" fill="#38BDF8">Py</text>
-        <!-- Mini Orbiting Moon: PyTorch -->
+        <circle cx="0" cy="0" r="16" fill="#08152B" stroke="#2F86FF" stroke-width="1.6"/>
+        <circle cx="0" cy="0" r="19" fill="none" stroke="#2F86FF" stroke-width="0.8" stroke-opacity="0.4"/>
+        <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="900" fill="#60A5FA">Py</text>
+        <!-- Orbiting PyTorch Moon -->
         <g>
           <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="3s" repeatCount="indefinite"/>
           <circle cx="23" cy="0" r="3.5" fill="#EF4444"/>
@@ -119,8 +98,8 @@
 
     <!-- PLANET 2: PyTorch / Machine Learning (Mid Orbit - 18s Period) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="90 205 260" to="450 205 260" dur="18s" repeatCount="indefinite"/>
-      <g transform="translate(295, 235)">
+      <animateTransform attributeName="transform" type="rotate" from="90 205 285" to="450 205 285" dur="18s" repeatCount="indefinite"/>
+      <g transform="translate(295, 260)">
         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="18s" repeatCount="indefinite"/>
         <circle cx="0" cy="0" r="16" fill="#170F28" stroke="#A855F7" stroke-width="1.6"/>
         <circle cx="0" cy="0" r="19" fill="none" stroke="#A855F7" stroke-width="0.8" stroke-opacity="0.4"/>
@@ -130,30 +109,30 @@
 
     <!-- PLANET 3: React / Frontend (Mid-Outer Orbit - 24s Period) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="210 205 260" to="570 205 260" dur="24s" repeatCount="indefinite"/>
-      <g transform="translate(90, 240)">
+      <animateTransform attributeName="transform" type="rotate" from="210 205 285" to="570 205 285" dur="24s" repeatCount="indefinite"/>
+      <g transform="translate(90, 265)">
         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="24s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#07152B" stroke="#247BFF" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#247BFF" stroke-width="0.8" stroke-opacity="0.4"/>
+        <circle cx="0" cy="0" r="16" fill="#07152B" stroke="#2F86FF" stroke-width="1.6"/>
+        <circle cx="0" cy="0" r="19" fill="none" stroke="#2F86FF" stroke-width="0.8" stroke-opacity="0.4"/>
         <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9.5" font-weight="900" fill="#93C5FD">Re</text>
       </g>
     </g>
 
     <!-- PLANET 4: PostGIS / Spatial Intelligence (Outer Orbit - 30s Counter Period) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="360 205 260" to="0 205 260" dur="30s" repeatCount="indefinite"/>
-      <g transform="translate(125, 360)">
+      <animateTransform attributeName="transform" type="rotate" from="360 205 285" to="0 205 285" dur="30s" repeatCount="indefinite"/>
+      <g transform="translate(125, 385)">
         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="30s" repeatCount="indefinite"/>
-        <circle cx="0" cy="0" r="16" fill="#1C0E1E" stroke="#FF354F" stroke-width="1.6"/>
-        <circle cx="0" cy="0" r="19" fill="none" stroke="#FF354F" stroke-width="0.8" stroke-opacity="0.4"/>
+        <circle cx="0" cy="0" r="16" fill="#1C0E1E" stroke="#FF3652" stroke-width="1.6"/>
+        <circle cx="0" cy="0" r="19" fill="none" stroke="#FF3652" stroke-width="0.8" stroke-opacity="0.4"/>
         <text x="0" y="4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" font-weight="900" fill="#FFA3AF">GIS</text>
       </g>
     </g>
 
     <!-- PLANET 5: FastAPI / Scalable Microservices (Deep Orbit - 36s Period) -->
     <g>
-      <animateTransform attributeName="transform" type="rotate" from="300 205 260" to="660 205 260" dur="36s" repeatCount="indefinite"/>
-      <g transform="translate(320, 345)">
+      <animateTransform attributeName="transform" type="rotate" from="300 205 285" to="660 205 285" dur="36s" repeatCount="indefinite"/>
+      <g transform="translate(320, 370)">
         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="-360 0 0" dur="36s" repeatCount="indefinite"/>
         <circle cx="0" cy="0" r="16" fill="#0A1D1A" stroke="#10B981" stroke-width="1.6"/>
         <circle cx="0" cy="0" r="19" fill="none" stroke="#10B981" stroke-width="0.8" stroke-opacity="0.4"/>
@@ -162,108 +141,103 @@
     </g>
 
     <!-- Left Footnote -->
-    <text x="205" y="458" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="1.5" fill="#64748B">PLANETARY RUNTIME • CONTINUOUS ORBITAL SHIP CYCLE</text>
+    <text x="205" y="495" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" font-weight="800" letter-spacing="1.5" fill="#64748B">PLANETARY RUNTIME • CONTINUOUS ORBITAL SHIP CYCLE</text>
   </g>
 
-  <!-- ================= RIGHT: COMPLETE STACK WITH FULL AI & ML SPECIALIZATION ================= -->
-  <g transform="translate(425, 100)">
+  <!-- ================= RIGHT: COMPLETE TECH STACK WITH DEDICATED AI/ML IDENTITY ================= -->
+  <g transform="translate(425, 95)">
 
-    <!-- Section 01: AI & Machine Learning (CORE SPECIALIZATION) -->
+    <!-- Section 01: AI & Machine Learning (PROMINENT DEDICATED IDENTITY) -->
     <g transform="translate(0, 0)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#C084FC">01 // AI &amp; MACHINE LEARNING (CORE)</text>
+      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#C084FC">01 // AI &amp; MACHINE LEARNING SYSTEMS</text>
       <g transform="translate(0, 20)">
+        <!-- Python -->
+        <g transform="translate(0, 0)">
+          <rect x="0" y="0" width="85" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
+          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">Python</text>
+        </g>
         <!-- PyTorch -->
-        <rect x="0" y="0" width="85" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-        <text x="12" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">PyTorch</text>
-
+        <g transform="translate(93, 0)">
+          <rect x="0" y="0" width="85" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
+          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">PyTorch</text>
+        </g>
+        <!-- Scikit-learn -->
+        <g transform="translate(186, 0)">
+          <rect x="0" y="0" width="105" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
+          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">Scikit-learn</text>
+        </g>
         <!-- TensorFlow -->
-        <rect x="93" y="0" width="105" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-        <text x="105" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">TensorFlow</text>
-
-        <!-- Scikit-Learn -->
-        <rect x="206" y="0" width="102" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-        <text x="218" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">Scikit-Learn</text>
-
+        <g transform="translate(299, 0)">
+          <rect x="0" y="0" width="100" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
+          <text x="12" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">TensorFlow</text>
+        </g>
         <!-- OpenCV -->
-        <rect x="316" y="0" width="82" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-        <text x="328" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">OpenCV</text>
+        <g transform="translate(407, 0)">
+          <rect x="0" y="0" width="75" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
+          <text x="10" y="19" font-family="-apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#E9D5FF">OpenCV</text>
+        </g>
 
-        <!-- LangChain / RAG -->
-        <rect x="406" y="0" width="76" height="30" rx="6" fill="#160C26" stroke="#A855F7" stroke-width="1.2"/>
-        <text x="416" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11" font-weight="800" fill="#E9D5FF">LangChain</text>
+        <!-- Row 2 of ML: NumPy, Pandas, Transformers, LangChain, FastAPI -->
+        <g transform="translate(0, 36)">
+          <rect x="0" y="0" width="85" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
+          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">NumPy</text>
+
+          <rect x="93" y="0" width="85" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
+          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">Pandas</text>
+
+          <rect x="186" y="0" width="105" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
+          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">Transformers</text>
+
+          <rect x="299" y="0" width="95" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
+          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">LangChain</text>
+
+          <rect x="402" y="0" width="80" height="26" rx="5" fill="#160C26" stroke="#A855F7" stroke-width="0.8"/>
+          <text x="12" y="17" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#D8B4FE">FastAPI</text>
+        </g>
       </g>
     </g>
 
     <!-- Section 02: Core Programming Languages -->
-    <g transform="translate(0, 78)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#60A5FA">02 // PROGRAMMING LANGUAGES</text>
+    <g transform="translate(0, 108)">
+      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#60A5FA">02 // PROGRAMMING LANGUAGES</text>
       <g transform="translate(0, 20)">
-        <rect x="0" y="0" width="80" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Python</text>
-
-        <rect x="88" y="0" width="98" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="100" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">TypeScript</text>
-
-        <rect x="194" y="0" width="98" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="206" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">JavaScript</text>
-
-        <rect x="300" y="0" width="62" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="312" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">SQL</text>
-
-        <rect x="370" y="0" width="58" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="382" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">C++</text>
-
-        <rect x="436" y="0" width="46" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="444" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Java</text>
+        <rect x="0" y="0" width="80" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Python</text>
+        <rect x="88" y="0" width="98" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">TypeScript</text>
+        <rect x="194" y="0" width="98" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">JavaScript</text>
+        <rect x="300" y="0" width="62" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="14" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">SQL</text>
+        <rect x="370" y="0" width="55" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">C++</text>
+        <rect x="433" y="0" width="49" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="10" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Java</text>
       </g>
     </g>
 
     <!-- Section 03: Frontend & Spatial Runtime -->
-    <g transform="translate(0, 156)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#38BDF8">03 // FRONTEND &amp; SPATIAL VISUALIZATION</text>
+    <g transform="translate(0, 184)">
+      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#38BDF8">03 // FRONTEND &amp; SPATIAL VISUALIZATION</text>
       <g transform="translate(0, 20)">
-        <rect x="0" y="0" width="72" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">React</text>
-
-        <rect x="80" y="0" width="78" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="92" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Next.js</text>
-
-        <rect x="166" y="0" width="115" height="30" rx="6" fill="#081A33" stroke="#247BFF" stroke-width="1.2"/>
-        <text x="178" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#60A5FA">MapLibre GL</text>
-
-        <rect x="289" y="0" width="76" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="301" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Leaflet</text>
-
-        <rect x="373" y="0" width="109" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="383" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Tailwind CSS</text>
+        <rect x="0" y="0" width="70" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">React</text>
+        <rect x="78" y="0" width="78" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Next.js</text>
+        <rect x="164" y="0" width="112" height="28" rx="6" fill="#081A33" stroke="#2F86FF" stroke-width="1.2"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#60A5FA">MapLibre GL</text>
+        <rect x="284" y="0" width="76" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Leaflet</text>
+        <rect x="368" y="0" width="114" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Tailwind CSS</text>
       </g>
     </g>
 
-    <!-- Section 04: Backend, Database & Cloud Systems -->
-    <g transform="translate(0, 234)">
-      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#34D399">04 // BACKEND &amp; SPATIAL INFRASTRUCTURE</text>
+    <!-- Section 04: Backend & Spatial Infrastructure -->
+    <g transform="translate(0, 260)">
+      <text x="0" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.8" fill="#34D399">04 // BACKEND &amp; SPATIAL INFRASTRUCTURE</text>
       <g transform="translate(0, 20)">
-        <rect x="0" y="0" width="82" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">FastAPI</text>
-
-        <rect x="90" y="0" width="82" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="102" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Node.js</text>
-
-        <rect x="180" y="0" width="138" height="30" rx="6" fill="#1C1022" stroke="#FF354F" stroke-width="1.2"/>
-        <text x="190" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#FF8A9A">PostgreSQL / GIS</text>
-
-        <rect x="326" y="0" width="70" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="338" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Redis</text>
-
-        <rect x="404" y="0" width="78" height="30" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/>
-        <text x="416" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="800" fill="#F1F5F9">Docker</text>
+        <rect x="0" y="0" width="75" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">FastAPI</text>
+        <rect x="83" y="0" width="78" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Node.js</text>
+        <rect x="169" y="0" width="135" height="28" rx="6" fill="#1C1022" stroke="#FF354F" stroke-width="1.2"/><text x="10" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#FF8A9A">PostgreSQL / GIS</text>
+        <rect x="312" y="0" width="68" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">Redis</text>
+        <rect x="388" y="0" width="94" height="28" rx="6" fill="#0C1527" stroke="#1E2F4D" stroke-width="1"/><text x="12" y="18" font-family="-apple-system, sans-serif" font-size="11" font-weight="800" fill="#F1F5F9">WebSockets</text>
       </g>
     </g>
 
-    <!-- Right Footnote Guidance -->
-    <g transform="translate(0, 316)">
-      <rect x="0" y="0" width="482" height="26" rx="5" fill="#080F1E" stroke="#16233B" stroke-width="0.8"/>
-      <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif" font-size="10" font-weight="800" letter-spacing="1.5" fill="#38BDF8">EXPLORE • ARCHITECT • REPEAT • ZERO DRIFT</text>
+    <!-- System Flow Graphic Visual: DATA -> MODEL -> INFERENCE API -->
+    <g transform="translate(0, 335)">
+      <rect x="0" y="0" width="482" height="42" rx="6" fill="#080F1E" stroke="#162544" stroke-width="1"/>
+      <text x="14" y="26" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="800" letter-spacing="1.2" fill="#8B96A8">SYSTEM VECTOR: <tspan fill="#60A5FA">DATA PIPELINE</tspan> → <tspan fill="#A855F7">ML MODEL</tspan> → <tspan fill="#34D399">FASTAPI INFERENCE</tspan> → <tspan fill="#F1F5F9">CLIENT UI</tspan></text>
     </g>
   </g>
 </svg>

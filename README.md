@@ -1,76 +1,99 @@
 <div align="center">
 
-![Prince Tiwari - Systems Architect & AI/ML Engineer](./assets/hero.svg?v=2)
+<!-- =========================================================================
+     01 // HERO — IDENTITY & POSITIONING
+     ========================================================================= -->
+<a href="https://github.com/xnacro">
+  <img src="./assets/hero.svg?v=3" width="100%" alt="Prince Tiwari — Software Engineer & Builder" />
+</a>
 
-<br/>
+<br/><br/>
 
-![About & Architectural Philosophy](./assets/about-life.svg?v=2)
+<!-- =========================================================================
+     02 // RECOGNITION — VERIFIED NATIONAL ACHIEVEMENTS (MOVED HIGH!)
+     ========================================================================= -->
+<img src="./assets/achievements.svg?v=3" width="100%" alt="01 // Verified Recognition — Cognithon 2nd, India Innovates Finalist, Flipkart GRiD Semi-Finalist, Surakshaai.org" />
 
-<br/>
+<br/><br/>
 
-![Planetary Engine Room & Verified Tech Stack](./assets/stack.svg?v=2)
+<!-- =========================================================================
+     03 // CURRENT STATE — NOW OPERATING
+     ========================================================================= -->
+<img src="./assets/current-build.svg?v=3" width="100%" alt="02 // Now Building — SurakshaAI Platform Sprint" />
 
-<br/>
+<br/><br/>
 
-![National Credentials & Verification Dashboard](./assets/id-dashboard.svg?v=2)
+<!-- =========================================================================
+     04 // FLAGSHIP SYSTEM — SURAKSHAAI ARCHITECTURAL CASE STUDY
+     ========================================================================= -->
+<a href="https://github.com/xnacro/SurakshaAI">
+  <img src="./assets/flagship.svg?v=3" width="100%" alt="03 // Flagship System — SurakshaAI Real-Time Safety Intelligence Platform" />
+</a>
+
+<br/><br/>
+
+<!-- =========================================================================
+     05 // SELECTED BUILDS — HIGH-IMPACT PRODUCTION ARCHITECTURES
+     ========================================================================= -->
+<img src="./assets/selected-builds.svg?v=3" width="100%" alt="04 // Selected Builds — RESQ, GridShare, MednormAI, OpenRAG" />
 
 </div>
 
 <br/>
 
-### 🏆 National Honors & Verified Achievements
+<!-- =========================================================================
+     QUICK DIRECTORY // SELECTED BUILDS DIRECT REPOSITORY LINKS
+     ========================================================================= -->
+<div align="center">
 
-| Honor / Contest | Issuing Authority | Recognition Level | Key Focus |
+| System | Track / Focus | Architecture | Source Code |
 | :--- | :--- | :--- | :--- |
-| **Cognithon National Hackathon** | **IIIT Bhagalpur** | 🏆 **2nd Prize** | High-Impact Systems & Spatial Engineering |
-| **India Innovates 2026** | **National Innovation Forum** | 🇮🇳 **National Finalist** | Civic AI, Disaster Relief & Critical Tech |
-| **Flipkart GRiD 2026** | **Flipkart Tech Flagship** | ⚡ **National Semi-Finalist** | Scale Engineering, Autonomous Algorithms |
-| **Surakshaai.org** | **Founder & Lead Architect** | 🌐 **Active Platform** | Real-Time Spatial AI & Dynamic Safety Index (DSI) |
-| **B.Tech Degree** | **Computer Science & Engineering** | 🎓 **AI & ML Specialization** | Muzaffarpur, Bihar, India |
+| **SurakshaAI** | Flagship Platform • Spatial AI | FastAPI • MapLibre GL • Scikit-learn • PostGIS | [**View Repository →**](https://github.com/xnacro/SurakshaAI) |
+| **RESQ** | National Finalist • Relief Routing | Valhalla Engine • PostGIS Hazard SSOT • Python | [**View Repository →**](https://github.com/xnacro/RESQ) |
+| **GridShare** | IIT Guwahati Flagship • Microgrid | Distributed Coordination • Node.js • React | [**View Repository →**](https://github.com/xnacro/GridShare) |
+| **MednormAI** | HackMatrix 2.0 • Clinical Records | OCR • NLP Pipeline • Python • FastAPI | [**View Repository →**](https://github.com/xnacro/MednormAI) |
+| **OpenRAG** | Enterprise AI • Semantic Search | PyTorch • Transformers • Vector DB • LangChain | [**View Repository →**](https://github.com/xnacro/OpenRAG) |
+
+</div>
 
 <br/>
 
-### 🚀 Complete Production Systems & Repositories
+### 🧪 Engineering Lab &amp; Real-Time Sandboxes
 
-#### 🌟 Flagship Systems & National Hackathons
+Beyond flagship platforms, these repositories explore low-latency network primitives, distributed telematics, and foundational algorithms:
 
-| Repository | Description | Architecture / Stack | Status |
-| :--- | :--- | :--- | :--- |
-| **[SurakshaAI](https://github.com/xnacro/SurakshaAI)** | AI-powered geospatial safety analytics platform computing Dynamic Safety Index (DSI) and live heatmaps | FastAPI • MapLibre GL • Spatial AI • PostGIS | `Active Platform` |
-| **[RESQ](https://github.com/xnacro/RESQ)** | Damage-aware relief supply chain routing across 408,986 500m hazard cells during natural disasters | Valhalla Routing • PostGIS • Python • Real-Time GIS | `National Challenge` |
-| **[GridShare](https://github.com/xnacro/GridShare)** | Community microgrid energy coordination layer simulating solar, battery & EV surplus with P2P trading | Distributed Systems • React • Node.js • Simulation | `IIT Guwahati Flagship` |
-| **[MednormAI](https://github.com/xnacro/MednormAI)** | AI clinical data normalization engine transforming messy medical PDFs into structured health data | OCR • NLP • Python • Healthcare Informatics | `HackMatrix 2.0 (IIT Patna)` |
-
-#### 🧠 AI / Machine Learning & Intelligence Pipelines
-
-| Repository | Description | Architecture / Stack |
-| :--- | :--- | :--- |
-| **[OpenRAG](https://github.com/xnacro/OpenRAG)** | End-to-end RAG pipeline with document embeddings, vector database indexing & semantic retrieval | PyTorch • Transformers • Vector DBs • LangChain |
-| **[UIDAI-Hackathon](https://github.com/xnacro/UIDAI-Hackathon)** | Next-generation identity verification & anti-spoofing biometric workflow system | Computer Vision • Microservices • Node.js • Full-Stack |
-
-#### ⚡ Real-Time Systems & High-Concurrency Infrastructure
-
-| Repository | Description | Architecture / Stack |
-| :--- | :--- | :--- |
-| **[Caralays](https://github.com/xnacro/Caralays)** | High-throughput real-time communication sandbox for WebSockets, WebRTC, Socket.IO, STUN/TURN & media streaming | WebSockets • WebRTC • Socket.IO • Scalable Media |
-| **[TransitOps](https://github.com/xnacro/TransitOps)** | Fleet & transport management system streamlining vehicle telematics, trips & predictive maintenance | Node.js • React • Real-Time Telemetry • PostgreSQL |
-
-#### 🛠️ Core Engineering & Algorithmic Sandboxes
-
-| Repository | Description | Language / Environment |
-| :--- | :--- | :--- |
-| **[Python-Playground](https://github.com/xnacro/Python-Playground)** | Algorithmic logic, spatial mathematics, graph heuristics & data structure experiments | Python 3.11+ |
-| **[Javascript-Playground](https://github.com/xnacro/Javascript-Playground)** | Asynchronous concurrency, event-loop profiling, reactive UI state & semester logic | JavaScript / Node.js |
-| **[Java-Playground](https://github.com/xnacro/Java-Playground)** | Object-oriented systems, multi-threaded pipelines & robust enterprise patterns | Java SE 21 |
+- ⚡ **[Caralays](https://github.com/xnacro/Caralays)** — Real-time media mesh & communication engine exploring WebSockets, WebRTC, Socket.IO, STUN/TURN, and SDP/ICE signaling.
+- 🚚 **[TransitOps](https://github.com/xnacro/TransitOps)** — Fleet telematics & transport operations platform streamlining vehicle telemetry, trips, and automated maintenance.
+- 🐍 **[Python-Playground](https://github.com/xnacro/Python-Playground)** — Algorithmic logic, spatial heuristics, graph search, and performance-critical prototypes.
+- 🟨 **[Javascript-Playground](https://github.com/xnacro/Javascript-Playground)** — Asynchronous event loop profiling, microtask mechanics, and reactive UI state architectures.
+- ☕ **[Java-Playground](https://github.com/xnacro/Java-Playground)** — Object-oriented systems, concurrent multithreading, and memory-safe design patterns.
 
 <br/>
 
 <div align="center">
 
-![Connect With Prince Tiwari](./assets/connect.svg?v=2)
+<!-- =========================================================================
+     06 // THE ENGINE ROOM — PLANETARY ORBITAL CORE & VERIFIED TOOLCHAIN
+     ========================================================================= -->
+<img src="./assets/stack.svg?v=3" width="100%" alt="05 // The Engine Room — Planetary Orbital System & Verified Toolchain" />
 
-<br/>
+<br/><br/>
 
+<!-- =========================================================================
+     07 // BUILDER ID & CHRONOLOGICAL TRAJECTORY
+     ========================================================================= -->
+<img src="./assets/id-dashboard.svg?v=3" width="100%" alt="06 // Builder ID Specification Pass & Chronological Engineering Journey" />
+
+<br/><br/>
+
+<!-- =========================================================================
+     08 // INITIATE TRANSMISSION — CONNECT
+     ========================================================================= -->
+<img src="./assets/connect.svg?v=3" width="100%" alt="07 // Initiate Transmission — Let's Build Something" />
+
+<br/><br/>
+
+<!-- Verified Clickable Social Communication Channels -->
 <p align="center">
   <a href="https://github.com/xnacro" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-xnacro-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -89,6 +112,6 @@
   </a>
 </p>
 
-<sub>&copy; 2026 Prince Tiwari (<b>@xnacro</b>) &bull; Built with precision as a unified engineering operating system.</sub>
+<sub>&copy; 2026 Prince Tiwari (<b>@xnacro</b>) &bull; Built with precision as a unified personal engineering operating system.</sub>
 
 </div>
